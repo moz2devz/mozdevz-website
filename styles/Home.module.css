@@ -11,7 +11,9 @@
 }
 
 .cardTitle {
+  color: #313233;
   margin-bottom: .8rem;
+  font-weight: 600;
 }
 
 .cardText {
