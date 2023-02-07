@@ -4,28 +4,28 @@ import Footer from '../components/footer'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.container}>
+      <div className={styles.main}>
         <section className={styles.features}>
-          <aside className="featureCards">
-            <div className="card">
-              <h3>É profissional de tecnologia?</h3>
-              <p>
+          <aside className={styles.featureCards}>
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>É profissional de tecnologia?</h3>
+              <p className={styles.cardText}>
                 Com uma comunidade que ostenta uma interessante
                 mistura de profissionais, sem duvidas o melhor
                 sitio para fazer networking.
               </p>
             </div>
-            <div className="card">
-              <h3>Pretende mudar de carreira para a tecnologia?</h3>
-              <p>
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>Pretende mudar de carreira para a tecnologia?</h3>
+              <p className={styles.cardText}>
                 Pretende mudar de carreira para tech? Parece assustador pois?
                 Fazer parte da comunidade lhe possibilita mergulhar suavemente
                 na sua carreira escolhida antes de dar o grande salto.
               </p>
             </div>
-            <div className="card">
-              <h3>É estudante de STEM?</h3>
-              <p>
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>É estudante de STEM?</h3>
+              <p className={styles.cardText}>
                 Temos constantemente veteranos da indústria
                 e líderes que passam por aqui para ter conversas
                 e discussões num ambiente informal e isto revela-se
@@ -33,7 +33,7 @@ export default function Home() {
               </p>
             </div>
           </aside>
-          <aside className="featureCTA">
+          <aside className={styles.featureCTA}>
             <h2>Aprendemos em comunidade</h2>
             <p>
               Proporcionamos oportunidades de partilha de conhecimento e desenvolvimento de habilidades para a criação de produtos digitais a jovens durante o period de formação e contribuímos para o desenvolvimento da sociedade atraves das soluções desenvolvidas.
