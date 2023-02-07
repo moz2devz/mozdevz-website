@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
+        {/* Features */}
         <section className={styles.features}>
+          {/* Feature Cards */}
           <aside className={styles.featureCards}>
             <div className={styles.card}>
               <h3 className={styles.cardTitle}>É profissional de tecnologia?</h3>
@@ -33,8 +35,10 @@ export default function Home() {
               </p>
             </div>
           </aside>
-          <aside className={styles.featureCTA}>
-            <h2>Aprendemos em comunidade</h2>
+
+          {/* Feature Header */}
+          <aside className={styles.featureHeader}>
+            <h2 className={styles.featureTitle}>Aprendemos em comunidade</h2>
             <p>
               Proporcionamos oportunidades de partilha de conhecimento e desenvolvimento de habilidades para a criação de produtos digitais a jovens durante o period de formação e contribuímos para o desenvolvimento da sociedade atraves das soluções desenvolvidas.
             </p>
