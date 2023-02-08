@@ -49,8 +49,8 @@ export default function Home() {
         {/* Comexão e Integração */}
         <section className={styles.programs}>
           <div className={styles.programHeader}></div>
-          <div className={styles.item}>
-            <aside className={styles.programItem}>
+          <div className={styles.programItems}>
+            <aside className={styles.item}>
               <h3 className={styles.itemTitle}>Talentos</h3>
               <p className={styles.itemText}>
                 Capacitados e desenvolvemos talentos com o objective de preprarar e integrar no mercado de trabalho atraves da nossa rede de parceiros
