@@ -1,5 +1,11 @@
+/* Features */
 .features {
   padding: 4rem 2rem;
+}
+
+/* Feature Cards */
+.featureCards {
+  margin-bottom: 6rem;
 }
 
 .card {
