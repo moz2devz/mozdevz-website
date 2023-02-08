@@ -39,7 +39,7 @@ export default function Home() {
           {/* Feature Header */}
           <aside className={styles.featureHeader}>
             <h2 className={styles.featureTitle}>Aprendemos em comunidade</h2>
-            <p>
+            <p className={styles.featureText}>
               Proporcionamos oportunidades de partilha de conhecimento e desenvolvimento de habilidades para a criação de produtos digitais a jovens durante o period de formação e contribuímos para o desenvolvimento da sociedade atraves das soluções desenvolvidas.
             </p>
           </aside>
