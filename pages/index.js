@@ -46,6 +46,14 @@ export default function Home() {
           </aside>
         </section>
 
+        {/* Join the community */}
+        <section className={styles.join}>
+          <div className={styles.joinBtns}>
+            <a href="#" className={styles.joinCommunity}>Seja membro</a>
+            <a href="#" className={styles.joinMeetup}>Seja membro</a>
+          </div>
+        </section>
+
         {/* Comexão e Integração */}
         <section className={styles.programs}>
           <div className={styles.programHeader}></div>
