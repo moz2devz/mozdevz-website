@@ -49,22 +49,22 @@ export default function Home() {
         {/* Comexão e Integração */}
         <section className={styles.programs}>
           <div className={styles.programHeader}></div>
-          <div className={styles.programItems}>
-            <aside className="programItem">
-              <h3>Talentos</h3>
-              <p>
+          <div className={styles.item}>
+            <aside className={styles.programItem}>
+              <h3 className={styles.itemTitle}>Talentos</h3>
+              <p className={styles.itemText}>
                 Capacitados e desenvolvemos talentos com o objective de preprarar e integrar no mercado de trabalho atraves da nossa rede de parceiros
               </p>
             </aside>
-            <aside className="programItem">
-              <h3>Startup</h3>
-              <p>
+            <aside className={styles.item}>
+              <h3 className={styles.itemTitle}>Startup</h3>
+              <p className={styles.itemText}>
                 Apoiamos equipas multidisplinares com orientação e capacitação no desenvolvimento de soluções tecnológicas em ambientes de extrema incerteza.
               </p>
             </aside>
-            <aside className="programItem">
-              <h3>Corporate</h3>
-              <p>
+            <aside className={styles.item}>
+              <h3 className={styles.itemTitle}>Corporate</h3>
+              <p className={styles.itemText}>
                 Firmamos parceirias e trabalhamos com empresas e ONGs no desenvolvimento de soluções de base tecnológica para a resolução de problemas sociais.
               </p>
             </aside>
