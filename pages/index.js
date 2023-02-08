@@ -75,17 +75,17 @@ export default function Home() {
         <section className={styles.teams}>
           <div className={styles.teamsHeader}></div>
           <div className={styles.teamsMembers}>
-            <div className="teamMember">
-              <h5>Igor L. Sambo</h5>
-              <p>Presidente</p>
+            <div className={styles.member}>
+              <h5 className={styles.memberName}>Igor L. Sambo</h5>
+              <p className={styles.memberRole}>Presidente</p>
             </div>
-            <div className="teamMember">
-              <h5>Carrima Januario</h5>
-              <p>Gestora de Projectos</p>
+            <div className={styles.member}>
+              <h5 className={styles.memberName}>Carrima Januario</h5>
+              <p className={styles.memberRole}>Gestora de Projectos</p>
             </div>
-            <div className="teamMember">
-              <h5>Sabera Pedro</h5>
-              <p>Vice-Presidente</p>
+            <div className={styles.member}>
+              <h5 className={styles.memberName}>Sabera Pedro</h5>
+              <p className={styles.memberRole}>Vice-Presidente</p>
             </div>
           </div>
         </section>
