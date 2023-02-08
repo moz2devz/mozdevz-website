@@ -17,4 +17,9 @@ h4,
 h5,
 h6 {
   font-family: var(--raleway-font);
+  line-height: 42px;
+}
+
+p {
+  line-height: 28px;
 }
