@@ -37,3 +37,14 @@
 .featureText {
   font-size: 17px;
 }
+
+.featureBtn {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: rgba(23, 129, 241, 1);
+  color: #fff;
+  text-decoration: none;
+}
