@@ -42,6 +42,7 @@ export default function Home() {
             <p className={styles.featureText}>
               Proporcionamos oportunidades de partilha de conhecimento e desenvolvimento de habilidades para a criação de produtos digitais a jovens durante o period de formação e contribuímos para o desenvolvimento da sociedade atraves das soluções desenvolvidas.
             </p>
+            <a href="#" className={styles.featureBtn}>Saiba mais</a>
           </aside>
         </section>
 
