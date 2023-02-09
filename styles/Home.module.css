@@ -125,3 +125,14 @@
   letter-spacing: 1px;
   color: #848991;
 }
+
+@media screen and (min-width: 600px) {
+  .join {
+    padding: 8rem 0;
+  }
+
+  .joinBtns {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
