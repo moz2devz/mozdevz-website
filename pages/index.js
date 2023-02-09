@@ -51,7 +51,7 @@ export default function Home() {
           <h2 className={styles.joinTitle}>Queres fazer parte da comunidade?</h2>
           <div className={styles.joinBtns}>
             <a href="#" className={styles.joinCommunity}>Seja membro</a>
-            <a href="#" className={styles.joinMeetup}>Seja membro</a>
+            <a href="#" className={styles.attendMeetup}>Seja membro</a>
           </div>
         </section>
 
