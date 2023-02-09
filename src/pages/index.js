@@ -48,10 +48,12 @@ export default function Home() {
 
         {/* Join the community */}
         <section className={styles.join}>
-          <h2 className={styles.joinTitle}>Queres fazer parte da comunidade?</h2>
+          <h2 className={styles.joinTitle}>
+            Participe dos nossos eventos ou seja membro da Mozdevz
+          </h2>
           <div className={styles.joinBtns}>
             <a href="#" className={styles.joinCommunity}>Seja membro</a>
-            <a href="#" className={styles.joinMeetup}>Seja membro</a>
+            <a href="#" className={styles.attendMeetup}>Seja membro</a>
           </div>
         </section>
 
