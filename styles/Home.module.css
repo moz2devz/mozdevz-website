@@ -129,6 +129,14 @@
 @media screen and (min-width: 600px) {
   .join {
     padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .joinTitle {
+    width: 28ch;
   }
 
   .joinBtns {
