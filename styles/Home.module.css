@@ -54,12 +54,13 @@
 
 /* Join the community section */
 .join {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
   background-color: #fafbfd;
 }
 
 .joinTitle {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
