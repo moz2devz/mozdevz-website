@@ -1,0 +1,100 @@
+/* Features */
+.features {
+  padding: 4rem 2rem;
+}
+
+/* Feature Cards */
+.featureCards {
+  margin-bottom: 6rem;
+}
+
+.card {
+  background: #f2f3f5;
+  padding: 6rem 2rem 2rem;
+  margin-bottom: 1.5rem;
+  color: #9ca1a7;
+  font-size: .9rem;
+}
+
+.cardTitle {
+  color: #313233;
+  margin-bottom: .8rem;
+  font-weight: 600;
+}
+
+.cardText {
+  font-size: 1.063rem;
+}
+
+/* Feature Header */
+.featureTitle {
+  color: #313233;
+  margin-bottom: .8rem;
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+
+.featureText {
+  font-size: 17px;
+  margin-bottom: 2.5rem;
+}
+
+.featureBtn {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  background-color: rgba(23, 129, 241, 1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* Conexão e Integração */
+.programs {
+  padding: 4rem 2rem;
+}
+
+.programsHeader {}
+
+.programItems {
+  padding: 0 1rem;
+}
+
+.item {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.itemTitle {}
+
+.itemText {
+  font-size: 18px;
+}
+
+/* Teams */
+.teams {
+  padding: 4rem 2rem;
+}
+
+.teamsHeader {}
+
+.teamsMember {}
+
+.member {
+  margin-bottom: 2rem;
+}
+
+.memberName {
+  font-size: 18px;
+}
+
+.memberRole {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #848991;
+}
