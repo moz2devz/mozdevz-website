@@ -194,14 +194,14 @@ export default function Home() {
         </Section>
 
         {/* Join the community */}
-        <section className='w-full bg-gray-200 py-16 px-8'>
-          <aside className="mb-4">
-            <h2 className="text-[20px] text-center">
+        <section className='w-full md:flex md:flex-col md:items-center bg-gray-200 py-16 px-8 md:py-32'>
+          <aside className="mb-4 md:mb-8 md:w-2/5">
+            <h2 className="text-[20px] md:text-2xl text-center">
               Gostaria de participar dos nossos meetups e ser
               membro da comunidade?
             </h2>
           </aside>
-          <aside className="flex flex-col gap-y-4">
+          <aside className="flex flex-col md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
             <a className="bg-blue-500 py-4 px-8" href="#">
               Ser membro da comunidade
             </a>
