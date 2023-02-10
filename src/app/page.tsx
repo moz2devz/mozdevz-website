@@ -3,6 +3,7 @@
 import { ArrowRight, User, Bag, Desktop, Buildings } from 'phosphor-react'
 import Image from 'next/image'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 
 export default function Home() {
@@ -256,6 +257,7 @@ export default function Home() {
           </div>
         </Section>
       </main>
+      <Footer />
     </div>
   )
 }
