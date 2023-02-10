@@ -193,6 +193,23 @@ export default function Home() {
           </div>
         </Section>
 
+        {/* Join the community */}
+        <section className='w-full bg-gray-200 py-16 px-8'>
+          <aside className="mb-4">
+            <h2 className="text-[20px] text-center">
+              Gostaria de participar dos nossos meetups e ser
+              membro da comunidade?
+            </h2>
+          </aside>
+          <aside className="flex flex-col gap-y-4">
+            <a className="bg-blue-500 py-4 px-8" href="#">
+              Ser membro da comunidade
+            </a>
+            <a className="bg-blue-500 py-4 px-8" href="#">
+              Participar de um meetup
+            </a>
+          </aside>
+        </section>
         <Section>
           <div className="flex flex-wrap justify-center gap-10 items-center">
             <div className="max-w-xs flex flex-col items-center gap-5">
