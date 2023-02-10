@@ -14,7 +14,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="max-w-xl flex flex-col gap-6 pt-36 pb-20">
               <h1 className="text-6xl text-white font-bold">
-                Comunidade Moçambicana de Desenvolvedores de Software e Aplicações.
+                A maior comunidade de desenvolvedores de Moçambique
               </h1>
               <p className="text-gray-100">
                 Impactamos milhares de devz e impulsionamos carreiras
