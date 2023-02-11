@@ -17,3 +17,11 @@
 .recognition:nth-child(3) {
   @apply border-r border-gray-400 md:border-none
 }
+
+.button {
+  @apply brightnessDownWhenHover py-3 px-10 rounded bg-blue-500 font-medium text-white uppercase max-w-max
+}
+
+.brightnessDownWhenHover {
+  @apply hover:brightness-75 duration-500 transition-all
+}

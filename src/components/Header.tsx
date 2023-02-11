@@ -72,7 +72,7 @@ const Header: React.FC = () => {
           </nav>
 
           <a
-            className="py-2 px-5 rounded bg-blue-500 font-bold text-white"
+            className="button"
             href="#"
           >
             Juntar-se a equipe

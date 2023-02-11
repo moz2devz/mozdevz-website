@@ -1,12 +1,14 @@
 'use client' // this is a client component
 
 import Image from 'next/image'
-import { ArrowRight, User, Bag, Desktop, Buildings } from 'phosphor-react'
+import { Desktop, Buildings } from 'phosphor-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
-import { recognitions, team, sponsors } from '@/data'
+import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
+import Cases from '@/components/cards/Cases'
+import { RevealList } from 'next-reveal'
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
             </p>
 
             <a
-              className="py-2 px-5 max-w-max rounded bg-blue-500 font-bold text-white uppercase"
+              className="button"
               href="#"
             >
               Saiba mais
@@ -35,100 +37,22 @@ export default function Home() {
       <main>
         <Section>
           <div className="flex flex-wrap gap-10 items-center justify-between">
-            <div className="flex flex-wrap gap-5">
-              <div className="flex flex-col gap-5">
-                <div className="max-w-xs bg-gray-200 rounded p-5 pt-12 overflow-hidden group cursor-pointer transition-colors duration-500 hover:bg-blue-500 hover:text-white">
-                  <div className="flex flex-col gap-5 group-hover:-translate-y-20 transition-transform duration-500">
-                    <User
-                      size={56}
-                      className="transition-opacity duration-500 group-hover:opacity-0"
-                    />
-                    <div>
-                      <h3 className="text-xl text-gray-800 font-bold">
-                        É profissional de tecnologia?
-                      </h3>
-                      <p className="mt-4">
-                        Com uma comunidade que ostenta uma interessante mistura
-                        de profissionais, sem duvidas é o melhor sitio para
-                        fazer networking.
-                      </p>
+            <div className="flex flex-wrap justify-center gap-5">
+              { 
+                whyMozDevz.map((items, index) => {
+                  return (
+                    <div key={index} className={`flex flex-col gap-5 ${index == 1 ? "md:-translate-y-6" : ""}`}>
+                      {
+                        items.map((item, index) => {
+                          return (
+                            <Cases key={index} {...item} />
+                          )
+                        })
+                      }
                     </div>
-                    <ArrowRight
-                      size={32}
-                      className="opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    />
-                  </div>
-                </div>
-                <div className="max-w-xs bg-gray-200 rounded p-5 pt-12 overflow-hidden group cursor-pointer transition-colors duration-500 hover:bg-blue-500 hover:text-white">
-                  <div className="flex flex-col gap-5 group-hover:-translate-y-20 transition-transform duration-500">
-                    <Bag
-                      size={56}
-                      className="transition-opacity duration-500 group-hover:opacity-0"
-                    />
-                    <div>
-                      <h3 className="text-xl text-gray-800 font-bold">
-                        Pretende mudar de carreira para a tecnologia?
-                      </h3>
-                      <p className="mt-4">
-                        Pretende mudar de carreira para tech? Parece assustador
-                        pois? Fazer parte da comunidade lhe possibilita
-                        mergulhar suavemente na sua carreira antes de dar o
-                        grande salto.
-                      </p>
-                    </div>
-                    <ArrowRight
-                      size={32}
-                      className="opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col gap-5 lg:translate-y-10">
-                <div className="max-w-xs bg-gray-200 rounded p-5 pt-12 overflow-hidden group cursor-pointer transition-colors duration-500 hover:bg-blue-500 hover:text-white">
-                  <div className="flex flex-col gap-5 group-hover:-translate-y-20 transition-transform duration-500">
-                    <User
-                      size={56}
-                      className="transition-opacity duration-500 group-hover:opacity-0"
-                    />
-                    <div>
-                      <h3 className="text-xl text-gray-800 font-bold">
-                        É estudante?
-                      </h3>
-                      <p className="mt-4">
-                        Temos mazas da indústria tech que passam por aqui para
-                        ter conversas e discussões interessantes. Obviamente é o
-                        melhor local para encontrar mentores.
-                      </p>
-                    </div>
-                    <ArrowRight
-                      size={32}
-                      className="opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    />
-                  </div>
-                </div>
-                <div className="max-w-xs bg-gray-200 rounded p-5 pt-12 overflow-hidden group cursor-pointer transition-colors duration-500 hover:bg-blue-500 hover:text-white">
-                  <div className="flex flex-col gap-5 group-hover:-translate-y-20 transition-transform duration-500">
-                    <Bag
-                      size={56}
-                      className="transition-opacity duration-500 group-hover:opacity-0"
-                    />
-                    <div>
-                      <h3 className="text-xl text-gray-800 font-bold">
-                        É iniciante em programação?
-                      </h3>
-                      <p className="mt-4">
-                        A união faz a força. Não comece sozinho ou isolado, a
-                        prática de programação e desenvolvimento de software é
-                        muito mais satisfatoria quando é feita em grupo.
-                      </p>
-                    </div>
-                    <ArrowRight
-                      size={32}
-                      className="opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    />
-                  </div>
-                </div>
-              </div>
+                  )
+                }) 
+              }
             </div>
 
             <div className="max-w-sm flex flex-col gap-5">
@@ -143,7 +67,7 @@ export default function Home() {
                 desenvolvidas.
               </p>
               <a
-                className="py-2 px-5 max-w-max rounded bg-blue-500 font-medium text-white uppercase"
+                className="button"
                 href="#"
               >
                 Saiba mais
@@ -153,7 +77,7 @@ export default function Home() {
         </Section>
 
         <Section>
-          <div className="flex flex-wrap items-center gap-14">
+          <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center gap-14">
             <div className="max-w-md flex flex-col gap-5">
               <h2 className="text-gray-900 text-3xl font-bold">
                 Impactamos milhares de devz e impulsionamos carreiras
@@ -185,7 +109,7 @@ export default function Home() {
                 })
               }
             </div>
-          </div>
+          </RevealList>
         </Section>
 
         <Section>
@@ -194,15 +118,15 @@ export default function Home() {
               <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
             </div>
 
-            <div className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+            <RevealList reset={true} interval={60} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
               {
                 team.map((member, index) => {
                   return (
-                    <TeamMember key={index} {...member} />
+                    <div key={index}><TeamMember {...member} /></div>
                   )
                 })
               }
-            </div>
+            </RevealList>
         </Section>
 
         <Section>
@@ -210,7 +134,7 @@ export default function Home() {
               <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
             </div>
 
-            <div className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+            <RevealList reset={true} interval={75} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
               {
                 sponsors.map((sponsor, index) => {
                   return (
@@ -220,7 +144,7 @@ export default function Home() {
                   )
                 })
               }
-            </div>
+            </RevealList>
         </Section>
 
         {/* Join the community */}
@@ -231,20 +155,20 @@ export default function Home() {
               membro da comunidade?
             </h2>
           </aside>
-          <aside className="flex flex-col md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
-            <a className="bg-blue-500 py-4 px-8" href="#">
+          <RevealList reset={true} interval={60} delay={500} className="flex flex-col md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
+            <a className="button !rounded-none" href="#">
               Ser membro da comunidade
             </a>
-            <a className="bg-blue-500 py-4 px-8" href="#">
+            <a className="button !rounded-none" href="#">
               Participar de um meetup
             </a>
-          </aside>
+          </RevealList>
         </Section>
 
         <Section>
-          <div className="flex flex-wrap justify-center gap-10 items-center">
-            <div className="max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white">
+          <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
+            <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
+              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
                 <Desktop size={56} />
               </div>
               <div className="text-center">
@@ -257,8 +181,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white">
+            <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
+              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
                 <Buildings size={56} />
               </div>
               <div className="text-center">
@@ -271,8 +195,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white">
+            <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
+              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
                 <Buildings size={56} />
               </div>
               <div className="text-center">
@@ -284,7 +208,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
+          </RevealList>
         </Section>
       </main>
       <Footer />
