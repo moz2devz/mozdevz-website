@@ -6,28 +6,32 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 
+const recognitions = [
+  { number: 1000, text: "Sensibilizados" },
+  { number: 200, text: "Meetups" },
+  { number: 800, text: "Membros" },
+]
+
 export default function Home() {
   return (
-    <div>
-      <div>
-        <Header />
-        <div className="bg-hero bg-cover bg-center p-5">
-          <div className="max-w-6xl mx-auto">
-            <div className="max-w-xl flex flex-col gap-6 pt-36 pb-20">
-              <h1 className="text-6xl text-white font-bold">
-                A maior comunidade de desenvolvedores de Moçambique
-              </h1>
-              <p className="text-gray-100">
-                Impactamos milhares de devz e impulsionamos carreiras
-              </p>
+    <>
+      <Header />
+      <div className="bg-hero bg-cover bg-center p-5 w-full">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-xl flex flex-col gap-6 pt-36 pb-20">
+            <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
+              A maior comunidade de desenvolvedores de Moçambique
+            </h1>
+            <p className="text-gray-100">
+              Impactamos milhares de devz e impulsionamos carreiras
+            </p>
 
-              <a
-                className="py-2 px-5 max-w-max rounded bg-blue-500 font-bold text-white uppercase"
-                href="#"
-              >
-                Saiba mais
-              </a>
-            </div>
+            <a
+              className="py-2 px-5 max-w-max rounded bg-blue-500 font-bold text-white uppercase"
+              href="#"
+            >
+              Saiba mais
+            </a>
           </div>
         </div>
       </div>
@@ -171,25 +175,19 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center gap-10 lg:gap-0">
-              <div className="border-r border-gray-500 pr-20 flex flex-col gap-2 w-full">
-                <span className="text-blue-500 text-4xl font-medium block">
-                  +1000
-                </span>
-                <span className="block font-bold">Sensibilizados</span>
-              </div>
-              <div className="sm:pl-10 sm:pr-20 border-r border-gray-500 flex flex-col gap-2 w-full">
-                <span className="text-blue-500 text-4xl font-medium block">
-                  +200
-                </span>
-                <span className="block font-bold">Meetups</span>
-              </div>
-              <div className="sm:pl-10 sm:pr-20 border-r border-gray-500 sm:border-none flex flex-col gap-2 w-full">
-                <span className="text-blue-500 text-4xl font-medium block">
-                  +800
-                </span>
-                <span className="block font-bold">Membros</span>
-              </div>
+            <div className="w-full md:w-auto flex flex-col md:flex-row items-center gap-10">
+              {
+                recognitions.map((recognition, index) => {
+                  return (
+                    <div key={index} className="recognition flex flex-col gap-2 w-full">
+                      <span className="text-blue-500 text-4xl font-medium block">
+                        { recognition.number }
+                      </span>
+                      <span className="block font-bold">{ recognition.text }</span>
+                    </div>
+                  )
+                })
+              }
             </div>
           </div>
         </Section>
@@ -211,6 +209,7 @@ export default function Home() {
             </a>
           </aside>
         </section>
+
         <Section>
           <div className="flex flex-wrap justify-center gap-10 items-center">
             <div className="max-w-xs flex flex-col items-center gap-5">
@@ -258,6 +257,6 @@ export default function Home() {
         </Section>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }

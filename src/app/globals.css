@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.recognition:nth-child(1) {
+  @apply border-r border-gray-400 md:border-none
+}
+
+.recognition:nth-child(2) {
+  @apply border-r md:border-l border-gray-400 md:pl-16 md:pr-24
+}
+
+.recognition:nth-child(3) {
+  @apply border-r border-gray-400 md:border-none
+}
