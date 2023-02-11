@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.section:nth-child(even) {
+  @apply bg-gray-100/40
+}
+
 .recognition:nth-child(1) {
   @apply border-r border-gray-400 md:border-none
 }

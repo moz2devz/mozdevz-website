@@ -3,8 +3,10 @@ const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
   props
 ) => {
   return (
-    <section className={'max-w-6xl mx-auto my-14 p-5 ' + className} {...props}>
-      {children}
+    <section className="section px-5 pt-16 pb-32" {...props}>
+      <div className={"w-full max-w-6xl mx-auto " + className}>
+        {children}
+      </div>
     </section>
   )
 }

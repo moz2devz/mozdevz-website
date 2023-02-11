@@ -224,7 +224,7 @@ export default function Home() {
         </Section>
 
         {/* Join the community */}
-        <section className='w-full md:flex md:flex-col md:items-center bg-gray-200 py-16 px-8 md:py-32'>
+        <Section className='md:flex md:flex-col md:items-center'>
           <aside className="mb-4 md:mb-8 md:w-2/5">
             <h2 className="text-[20px] md:text-2xl text-center">
               Gostaria de participar dos nossos meetups e ser
@@ -239,7 +239,7 @@ export default function Home() {
               Participar de um meetup
             </a>
           </aside>
-        </section>
+        </Section>
 
         <Section>
           <div className="flex flex-wrap justify-center gap-10 items-center">
