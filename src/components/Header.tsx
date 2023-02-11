@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`transition-colors duration-700 fixed z-50 right-0 left-0 top-0 ${
-        scrollY > 200 ? 'text-black bg-white' : 'bg-black/20 text-white'
+        scrollY > 200 ? 'text-black bg-white shadow' : 'bg-black/20 text-white'
       }`}
     >
       <div
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
           </nav>
 
           <a
-            className="py-2 px-5 rounded bg-blue-500 font-bold text-white"
+            className="button"
             href="#"
           >
             Juntar-se a equipe
