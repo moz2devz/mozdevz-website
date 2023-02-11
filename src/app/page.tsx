@@ -1,16 +1,11 @@
 'use client' // this is a client component
 
 import { ArrowRight, User, Bag, Desktop, Buildings } from 'phosphor-react'
-import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
-
-const recognitions = [
-  { number: 1000, text: "Sensibilizados" },
-  { number: 200, text: "Meetups" },
-  { number: 800, text: "Membros" },
-]
+import TeamMember from '@/components/cards/TeamMember'
+import { recognitions, team } from '@/data'
 
 export default function Home() {
   return (
@@ -190,6 +185,23 @@ export default function Home() {
               }
             </div>
           </div>
+        </Section>
+
+        <Section>
+            <div className='text-center max-w-md mx-auto'>
+              <h2 className="text-gray-900 text-3xl font-bold">O nosso pessoal</h2>
+              <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
+            </div>
+
+            <div className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+              {
+                team.map((member, index) => {
+                  return (
+                    <TeamMember key={index} {...member} />
+                  )
+                })
+              }
+            </div>
         </Section>
 
         {/* Join the community */}
