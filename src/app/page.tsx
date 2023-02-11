@@ -1,11 +1,12 @@
 'use client' // this is a client component
 
+import Image from 'next/image'
 import { ArrowRight, User, Bag, Desktop, Buildings } from 'phosphor-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
-import { recognitions, team } from '@/data'
+import { recognitions, team, sponsors } from '@/data'
 
 export default function Home() {
   return (
@@ -198,6 +199,24 @@ export default function Home() {
                 team.map((member, index) => {
                   return (
                     <TeamMember key={index} {...member} />
+                  )
+                })
+              }
+            </div>
+        </Section>
+
+        <Section>
+            <div className='text-center max-w-md mx-auto'>
+              <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
+            </div>
+
+            <div className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+              {
+                sponsors.map((sponsor, index) => {
+                  return (
+                    <div key={index} className="max-w-[100px]">
+                      <Image src={ sponsor.logo } alt={ sponsor.name } className="w-full" />
+                    </div>
                   )
                 })
               }
