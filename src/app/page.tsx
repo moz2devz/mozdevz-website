@@ -38,7 +38,7 @@ export default function Home() {
         <Section>
           <div className="flex flex-wrap gap-10 items-center justify-between">
             <div className="flex flex-wrap justify-center gap-5">
-              { 
+              {
                 whyMozDevz.map((items, index) => {
                   return (
                     <div key={index} className={`flex flex-col gap-5 ${index == 1 ? "md:-translate-y-6" : ""}`}>
@@ -51,7 +51,7 @@ export default function Home() {
                       }
                     </div>
                   )
-                }) 
+                })
               }
             </div>
 
@@ -101,50 +101,15 @@ export default function Home() {
                   return (
                     <div key={index} className="recognition flex flex-col gap-2 w-full">
                       <span className="text-blue-500 text-4xl font-medium block">
-                        { recognition.number }
+                        {recognition.number}
                       </span>
-                      <span className="block font-bold">{ recognition.text }</span>
+                      <span className="block font-bold">{recognition.text}</span>
                     </div>
                   )
                 })
               }
             </div>
           </RevealList>
-        </Section>
-
-        <Section>
-            <div className='text-center max-w-md mx-auto'>
-              <h2 className="text-gray-900 text-3xl font-bold">O nosso pessoal</h2>
-              <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
-            </div>
-
-            <RevealList reset={true} interval={60} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
-              {
-                team.map((member, index) => {
-                  return (
-                    <div key={index}><TeamMember {...member} /></div>
-                  )
-                })
-              }
-            </RevealList>
-        </Section>
-
-        <Section>
-            <div className='text-center max-w-md mx-auto'>
-              <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
-            </div>
-
-            <RevealList reset={true} interval={75} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
-              {
-                sponsors.map((sponsor, index) => {
-                  return (
-                    <div key={index} className="max-w-[100px]">
-                      <Image src={ sponsor.logo } alt={ sponsor.name } className="w-full" />
-                    </div>
-                  )
-                })
-              }
-            </RevealList>
         </Section>
 
         {/* Join the community */}
@@ -208,6 +173,41 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </RevealList>
+        </Section>
+
+        <Section>
+          <div className='text-center max-w-md mx-auto'>
+            <h2 className="text-gray-900 text-3xl font-bold">O nosso pessoal</h2>
+            <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
+          </div>
+
+          <RevealList reset={true} interval={60} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+            {
+              team.map((member, index) => {
+                return (
+                  <div key={index}><TeamMember {...member} /></div>
+                )
+              })
+            }
+          </RevealList>
+        </Section>
+
+        <Section>
+          <div className='text-center max-w-md mx-auto'>
+            <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
+          </div>
+
+          <RevealList reset={true} interval={75} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+            {
+              sponsors.map((sponsor, index) => {
+                return (
+                  <div key={index} className="max-w-[100px]">
+                    <Image src={sponsor.logo} alt={sponsor.name} className="w-full" />
+                  </div>
+                )
+              })
+            }
           </RevealList>
         </Section>
       </main>
