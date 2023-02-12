@@ -46,7 +46,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-hero bg-cover bg-center p-5 w-full h h-96 min-h-full"></div>
+            <div className="bg-about bg-cover bg-center p-5 w-full h h-96 min-h-full"></div>
           </div>
         </Section>
       </main>
