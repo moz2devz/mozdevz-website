@@ -14,9 +14,9 @@ import reinoLogo from "../public/assets/sponsors/reino.png";
 import { User, Student, Swap, Code } from "phosphor-react"
 
 const recognitions = [
-  { number: 5000, text: "Sensibilizados" },
-  { number: 800, text: "Membros" },
-  { number: 300, text: "Formados" },
+  { number: 6000, text: "Sensibilizados" },
+  { number: 2000, text: "Membros" },
+  { number: 600, text: "Formados" },
 ]
 
 const team = [
@@ -29,7 +29,7 @@ const team = [
     img: igorImg
   },
   {
-    name: "Sabera Pedro",
+    name: "Odília Nhacundela",
     role: "Vice-Presidente",
     instagram: "#",
     twitter: "#",
@@ -37,7 +37,7 @@ const team = [
     img: igorImg
   },
   {
-    name: "Carrima Januario",
+    name: "Carrima Januário",
     role: "Gestora de projectos",
     instagram: "#",
     twitter: "#",
@@ -45,24 +45,24 @@ const team = [
     img: igorImg
   },
   {
-    name: "Odilia Nhacundela",
-    role: "Relações Públicas",
+    name: "Fred Cuambe",
+    role: "Gestor de Comunidades",
     instagram: "#",
     twitter: "#",
     facebook: "#",
     img: igorImg
   },
   {
-    name: "Odilia Nhacundela",
-    role: "Relações Públicas",
+    name: "Fenilde Chiluvane",
+    role: "Gestora de Comunicação",
     instagram: "#",
     twitter: "#",
     facebook: "#",
     img: igorImg
   },
   {
-    name: "Odilia Nhacundela",
-    role: "Relações Públicas",
+    name: "Henrique (Mister Paps)",
+    role: "Gestor de Imagem",
     instagram: "#",
     twitter: "#",
     facebook: "#",
