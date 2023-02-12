@@ -120,7 +120,7 @@ export default function Home() {
               membro da comunidade?
             </h2>
           </aside>
-          <RevealList reset={true} interval={60} delay={500} className="flex flex-col md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
+          <RevealList reset={true} interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
             <a className="button !rounded-none" href="#">
               Ser membro da comunidade
             </a>
