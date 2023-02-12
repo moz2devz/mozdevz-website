@@ -1,16 +1,9 @@
 'use client' // this is a client component
 
-import Image from 'next/image'
-import { Desktop, Buildings } from 'phosphor-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import Wrapper from '@/components/layouts/Wrapper'
-import TeamMember from '@/components/cards/TeamMember'
-import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
-import Cases from '@/components/cards/Cases'
-import { RevealList } from 'next-reveal'
-
 export default function About() {
   return (
     <>
