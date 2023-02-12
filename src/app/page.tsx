@@ -140,8 +140,7 @@ export default function Home() {
                 <h3 className="text-xl text-gray-800 font-bold">Talentos</h3>
                 <p className="mt-4">
                   Capacitados e desenvolvemos talentos com o objective de
-                  preprarar e integrar no mercado de trabalho atraves da nossa
-                  rede de parceiros.
+                  preprarar e integrar no mercado de trabalho atraves da nossa rede de parceiros.
                 </p>
               </div>
             </div>
@@ -178,8 +177,11 @@ export default function Home() {
 
         <Section>
           <div className='text-center max-w-md mx-auto'>
-            <h2 className="text-gray-900 text-3xl font-bold">O nosso pessoal</h2>
-            <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
+            <h2 className="text-gray-900 text-3xl font-bold">Mozdevz Team</h2>
+            <p className="text-gray-600">
+              A team responsavel por dirigir essa imensa comunidade de
+              devz do Rovuma ao Maputo
+            </p>
           </div>
 
           <RevealList reset={true} interval={60} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
