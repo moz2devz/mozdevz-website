@@ -193,7 +193,12 @@ export default function Home() {
 
         <Section>
           <div className='text-center max-w-md mx-auto'>
-            <p className="text-gray-600">The people who make things happen in our company and who believe and build the future.</p>
+            <h2 className="text-gray-900 text-3xl font-bold mb-2">
+              Parceiros e patrocinadores
+            </h2>
+            <p className="text-gray-600">
+              Parceiros e patrocinadores que nos apoiam na organização de eventos, workshops e projectos que ajudam a impulsionar o desenvolvimento da comunidade
+            </p>
           </div>
 
           <RevealList reset={true} interval={75} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
