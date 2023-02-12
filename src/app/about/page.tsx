@@ -27,21 +27,26 @@ export default function About() {
 
       <main>
         <Section>
-          <div className="px-6">
-            <div className="mb-8">
-              <h2 className="text-[24px] mb-4">Take a look into how we got started.</h2>
-              <a className="text-blue-500 font-bold" href='#'>
-                Conheça a nossa team
-              </a>
+          <div className="md:px-4 px-6">
+            <div className="md:flex md:space-x-10 md:gap-28">
+              <div className="mb-8 md:w-2/5">
+                <h2 className="text-[24px] md:text-4xl mb-4 md:mb-8">
+                  Take a look into how we got started.
+                </h2>
+                <a className="text-blue-500 font-bold" href='#'>
+                  Conheça a nossa team
+                </a>
+              </div>
+              <div className="md:w-3/5 mb-12">
+                <p className="mb-4 leading-loose">
+                  Exponent WordPress theme is insanely flexible and amazingly easy to use. This alone would be enough for a 5 star rating. On top of a great tool is even better customer support. The only theme you will ever need.
+                </p>
+                <p className="leading-loose">
+                  Over 30 high quality professionally designed pre-built website concepts to choose from. Build your website using a fully visual interface, using our revolutionary page & header builder.
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="mb-4 leading-loose">
-                Exponent WordPress theme is insanely flexible and amazingly easy to use. This alone would be enough for a 5 star rating. On top of a great tool is even better customer support. The only theme you will ever need.
-              </p>
-              <p className="leading-loose">
-                Over 30 high quality professionally designed pre-built website concepts to choose from. Build your website using a fully visual interface, using our revolutionary page & header builder.
-              </p>
-            </div>
+            <div className="bg-hero bg-cover bg-center p-5 w-full h h-96 min-h-full"></div>
           </div>
         </Section>
       </main>
