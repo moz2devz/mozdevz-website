@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { List, X } from 'phosphor-react'
+import Image from 'next/image'
+import logo from "../../public/assets/logo.png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -28,7 +30,11 @@ const Header: React.FC = () => {
         <div className="hidden items-center justify-between lg:flex">
           <div className="flex items-center gap-8">
             <span className="text-2xl font-bold block">
-              <a href="/">MozDevz</a>
+              <Image
+                src={logo}
+                width={130}
+                alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
+              />
             </span>
           </div>
 
@@ -70,10 +76,10 @@ const Header: React.FC = () => {
           </nav>
 
           <a
-            className="button"
+            className="button text-sm"
             href="#"
           >
-            Juntar-se a equipe
+            Juntar-se a comunidade
           </a>
         </div>
 
