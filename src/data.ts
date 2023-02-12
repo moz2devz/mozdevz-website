@@ -14,9 +14,9 @@ import reinoLogo from "../public/assets/sponsors/reino.png";
 import { User, Student, Swap, Code } from "phosphor-react"
 
 const recognitions = [
-  { number: 5000, text: "Sensibilizados" },
-  { number: 800, text: "Membros" },
-  { number: 300, text: "Formados" },
+  { number: 6000, text: "Sensibilizados" },
+  { number: 2000, text: "Membros" },
+  { number: 600, text: "Formados" },
 ]
 
 const team = [
