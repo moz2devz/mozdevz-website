@@ -49,6 +49,32 @@ export default function About() {
             <div className="bg-about bg-cover bg-center p-5 w-full h h-96 min-h-full"></div>
           </div>
         </Section>
+        <Wrapper className='py-16 px-10 bg-[#fafbfd] '>
+          <div className='mb-10 text-center'>
+            <p className="mb-4">How we work</p>
+            <h2 className='text-2xl'>A simple process</h2>
+          </div>
+          <div className='flex flex-col gap-10 text-center px-6'>
+            <div>
+              <h3 className='font-bold mb-4'>Missão</h3>
+              <p className="font-light">
+                Wireframing has its pros and cons as it the crutial part of the design stage.
+              </p>
+            </div>
+            <div>
+              <h3 className='font-bold mb-4'>Valores</h3>
+              <p className="font-light">
+                Wireframing has its pros and cons as it the crutial part of the design stage.
+              </p>
+            </div>
+            <div>
+              <h3 className='font-bold mb-4'>Visão</h3>
+              <p className="font-light">
+                Wireframing has its pros and cons as it the crutial part of the design stage.
+              </p>
+            </div>
+          </div>
+        </Wrapper>
       </main>
       <Footer />
     </>
