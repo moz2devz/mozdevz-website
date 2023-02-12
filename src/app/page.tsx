@@ -98,7 +98,7 @@ export default function Home() {
                   return (
                     <div key={index} className="recognition flex flex-col gap-2 w-full">
                       <span className="text-blue-500 text-4xl font-medium block">
-                        {recognition.number}
+                        +{recognition.number}
                       </span>
                       <span className="block font-bold">{recognition.text}</span>
                     </div>
