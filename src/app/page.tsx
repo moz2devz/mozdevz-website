@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section>
+        <Wrapper className='md:px-16 md:py-24 px-5 py-24 bg-[#fafbfd]'>
           <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center gap-14">
             <div className="max-w-md flex flex-col gap-5">
               <h2 className="text-gray-900 text-3xl font-bold">
@@ -107,7 +107,7 @@ export default function Home() {
               }
             </div>
           </RevealList>
-        </Section>
+        </Wrapper>
 
         {/* Join the community */}
         <Wrapper className='px-5 py-20 md:py-40 md:flex md:flex-col md:items-center'>
