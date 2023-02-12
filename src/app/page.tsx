@@ -83,11 +83,7 @@ export default function Home() {
                 Impactamos milhares de devz e impulsionamos carreiras
               </h2>
               <p className="text-gray-600">
-                Somos um verdadeiro ecossistema de colaboração e inovação.
-                Ajudamos a impulsionar o ecossistema tecnologico e criamos
-                soluções para desafios comuns da sociedade atraves da
-                tecnologia. Oferecem oportunidades para os membros aprenderem e
-                desenvolverem suas habilidades.
+                Somos uma comunidade de desenvolvedores moçambicanos de software e aplicações. Usamos os nossos talentos para contribuir para o desenvolvimento social da comunidade na qual estamos inseridos.
               </p>
 
               <a href="#" className="text-blue-500 font-bold">
