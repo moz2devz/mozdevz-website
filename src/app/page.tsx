@@ -5,6 +5,7 @@ import { Desktop, Buildings } from 'phosphor-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
+import Wrapper from '@/components/layouts/Wrapper'
 import TeamMember from '@/components/cards/TeamMember'
 import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
 import Cases from '@/components/cards/Cases'
@@ -109,8 +110,8 @@ export default function Home() {
         </Section>
 
         {/* Join the community */}
-        <Section className='md:flex md:flex-col md:items-center py-36 bg-slate-100'>
-          <aside className="mb-4 md:mb-8 md:w-2/5">
+        <Wrapper className='px-5 py-20 md:py-40 md:flex md:flex-col md:items-center'>
+          <aside className="mb-6 md:mb-8 md:w-2/5">
             <h2 className="text-[22px] md:text-2xl text-center">
               Gostaria de participar dos nossos meetups e ser
               membro da comunidade?
@@ -118,13 +119,13 @@ export default function Home() {
           </aside>
           <RevealList reset={true} interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
             <a className="button !rounded-none" href="#">
-              Ser membro da comunidade
+              Ser membro da Mozdevz
             </a>
             <a className="button !rounded-none" href="#">
               Participar de um meetup
             </a>
           </RevealList>
-        </Section>
+        </Wrapper>
 
         <Section>
           <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
