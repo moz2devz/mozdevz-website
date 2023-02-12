@@ -20,86 +20,86 @@ const recognitions = [
 ]
 
 const team = [
-  { 
-    name: "Igor L. Sambo", 
-    role: "Presidente", 
-    instagram: "#", 
-    twitter: "#", 
-    facebook: "#", 
+  {
+    name: "Igor L. Sambo",
+    role: "Presidente",
+    instagram: "#",
+    twitter: "#",
+    facebook: "#",
     img: igorImg
   },
-  { 
-    name: "Carrima Januario", 
-    role: "Gestora de projectos", 
-    instagram: "#", 
-    twitter: "#", 
-    facebook: "#", 
+  {
+    name: "Carrima Januario",
+    role: "Gestora de projectos",
+    instagram: "#",
+    twitter: "#",
+    facebook: "#",
     img: igorImg
   },
-  { 
-    name: "Sabera Pedro", 
-    role: "Vice-Presidente", 
-    instagram: "#", 
-    twitter: "#", 
-    facebook: "#", 
+  {
+    name: "Sabera Pedro",
+    role: "Vice-Presidente",
+    instagram: "#",
+    twitter: "#",
+    facebook: "#",
     img: igorImg
   }
 ]
 
 const sponsors = [
-  { 
-    name: "Centro cultural americano", 
+  {
+    name: "Centro cultural americano",
     logo: ccaLogo
   },
-  { 
-    name: "Ciuem", 
+  {
+    name: "Ciuem",
     logo: ciuemLogo
   },
-  { 
-    name: "Co-work lab", 
+  {
+    name: "Co-work lab",
     logo: coworklabLogo
   },
-  { 
-    name: "Ministério da Ciência, Tecnologia e Ensino Superior", 
+  {
+    name: "Ministério da Ciência, Tecnologia e Ensino Superior",
     logo: mctestpLogo
   },
-  { 
-    name: "OX Fam", 
+  {
+    name: "OX Fam",
     logo: oxfamLogo
   },
-  { 
-    name: "psi", 
+  {
+    name: "psi",
     logo: psiLogo
   },
-  { 
-    name: "Reino dos Países baixos", 
+  {
+    name: "Reino dos Países baixos",
     logo: reinoLogo
   },
 ]
 
 const cases = [
   [
-    { 
-      Icon: User, 
+    {
+      Icon: User,
       question: "É profissional de tecnologia?",
-      answer: "Com uma comunidade que ostenta uma interessante mistura de profissionais, sem duvidas é o melhor sitio para fazer networking." 
+      answer: "Expanda seus conhecimentos e faça network com outros profissionais."
     },
-    { 
-      Icon: Student, 
+    {
+      Icon: Student,
       question: "É estudante?",
-      answer: "É estudante? Temos mazas da indústria tech que passam por aqui para ter conversas e discussões interessantes. Obviamente é o melhor local para encontrar mentores." 
+      answer: "Tenha acesso a conversas e discussões interessantes e encontre mentores."
     },
   ],
   [
-    { 
-      Icon: Swap, 
-      question: "Pretende mudar de carreira para a tecnologia?",
-      answer: "Pretende mudar de carreira para tech? Parece assustador pois? Fazer parte da comunidade lhe possibilita mergulhar suavemente na sua carreira antes de dar o grande salto." 
+    {
+      Icon: Swap,
+      question: "Pretende mudar de carreira?",
+      answer: "Mergulhe suavemente na sua carreira antes de dar o grande salto."
     },
-    { 
-      Icon: Code, 
+    {
+      Icon: Code,
       question: "É iniciante em programação?",
-      answer: "A união faz a força. Não comece sozinho ou isolado, a prática de programação e desenvolvimento de software é muito mais satisfatoria quando é feita em grupo." 
+      answer: "Conecte-se com outros entusiastas e profissionais da área."
     },
   ]
 ]
