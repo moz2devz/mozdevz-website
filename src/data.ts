@@ -29,6 +29,14 @@ const team = [
     img: igorImg
   },
   {
+    name: "Sabera Pedro",
+    role: "Vice-Presidente",
+    instagram: "#",
+    twitter: "#",
+    facebook: "#",
+    img: igorImg
+  },
+  {
     name: "Carrima Januario",
     role: "Gestora de projectos",
     instagram: "#",
@@ -37,13 +45,29 @@ const team = [
     img: igorImg
   },
   {
-    name: "Sabera Pedro",
-    role: "Vice-Presidente",
+    name: "Odilia Nhacundela",
+    role: "Relações Públicas",
     instagram: "#",
     twitter: "#",
     facebook: "#",
     img: igorImg
-  }
+  },
+  {
+    name: "Odilia Nhacundela",
+    role: "Relações Públicas",
+    instagram: "#",
+    twitter: "#",
+    facebook: "#",
+    img: igorImg
+  },
+  {
+    name: "Odilia Nhacundela",
+    role: "Relações Públicas",
+    instagram: "#",
+    twitter: "#",
+    facebook: "#",
+    img: igorImg
+  },
 ]
 
 const sponsors = [
