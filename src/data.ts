@@ -29,7 +29,7 @@ const team = [
     img: igorImg
   },
   {
-    name: "Sabera Pedro",
+    name: "Odília Nhacundela",
     role: "Vice-Presidente",
     instagram: "#",
     twitter: "#",
@@ -37,7 +37,7 @@ const team = [
     img: igorImg
   },
   {
-    name: "Carrima Januario",
+    name: "Carrima Januário",
     role: "Gestora de projectos",
     instagram: "#",
     twitter: "#",
@@ -45,24 +45,24 @@ const team = [
     img: igorImg
   },
   {
-    name: "Odilia Nhacundela",
-    role: "Relações Públicas",
+    name: "Fred Cuambe",
+    role: "Gestor de Comunidades",
     instagram: "#",
     twitter: "#",
     facebook: "#",
     img: igorImg
   },
   {
-    name: "Odilia Nhacundela",
-    role: "Relações Públicas",
+    name: "Fenilde Chiluvane",
+    role: "Gestora de Comunicação",
     instagram: "#",
     twitter: "#",
     facebook: "#",
     img: igorImg
   },
   {
-    name: "Odilia Nhacundela",
-    role: "Relações Públicas",
+    name: "Henrique (Mister Paps)",
+    role: "Gestor de Imagem",
     instagram: "#",
     twitter: "#",
     facebook: "#",
