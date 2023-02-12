@@ -113,7 +113,7 @@ export default function Home() {
         </Section>
 
         {/* Join the community */}
-        <Section className='md:flex md:flex-col md:items-center'>
+        <Section className='md:flex md:flex-col md:items-center py-36 bg-slate-100'>
           <aside className="mb-4 md:mb-8 md:w-2/5">
             <h2 className="text-[20px] md:text-2xl text-center">
               Gostaria de participar dos nossos meetups e ser
