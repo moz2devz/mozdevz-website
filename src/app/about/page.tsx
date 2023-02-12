@@ -19,14 +19,31 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="max-w-xl flex flex-col gap-6 pt-36 pb-20">
             <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
-              We make Mondays to Fridays exciting
+              Impactamos milhares de devz e impulsionamos carreiras
             </h1>
           </div>
         </div>
       </div>
 
       <main>
-        <h1> This is the about page </h1>
+        <Section>
+          <div className="px-6">
+            <div className="mb-8">
+              <h2 className="text-[24px] mb-4">Take a look into how we got started.</h2>
+              <a className="text-blue-500 font-bold" href='#'>
+                Conheça a nossa team
+              </a>
+            </div>
+            <div>
+              <p className="mb-4 leading-loose">
+                Exponent WordPress theme is insanely flexible and amazingly easy to use. This alone would be enough for a 5 star rating. On top of a great tool is even better customer support. The only theme you will ever need.
+              </p>
+              <p className="leading-loose">
+                Over 30 high quality professionally designed pre-built website concepts to choose from. Build your website using a fully visual interface, using our revolutionary page & header builder.
+              </p>
+            </div>
+          </div>
+        </Section>
       </main>
       <Footer />
     </>
