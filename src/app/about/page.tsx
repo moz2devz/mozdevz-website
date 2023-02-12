@@ -44,23 +44,25 @@ export default function About() {
         </Section>
         <Wrapper className='py-16 md:py-32 px-10 md:px-32 bg-[#fafbfd]'>
           <div className='mb-10 text-center'>
-            <p className="mb-4">How we work</p>
-            <h2 className='text-2xl md:text-4xl md:font-semibold'>A simple process</h2>
+            <p className="mb-4">Nossa Identidade</p>
+            <h2 className='text-2xl text-center md:text-4xl md:font-semibold'>
+              Comunidade. Tecnologia. Experiências
+            </h2>
           </div>
-          <div className='flex flex-col gap-10 text-center px-6 md:flex-row md:gap-10'>
-            <div>
+          <div className='md:grid md:gap-16 md:grid-cols-3'>
+            <div className="text-center">
               <h3 className='font-bold mb-4'>Visão</h3>
               <p className="font-light">
                 Ser uma plataforma activa e colaborativa que promova a integração local, continental e global das comunidades através do uso das tecnologias.
               </p>
             </div>
-            <div>
+            <div className="text-center">
               <h3 className='font-bold mb-4'>Missão</h3>
               <p className="font-light">
                 Usar as TICs para desenvolver o país, através do empoderamento, espírito de trabalho e partilha de conhecimento para tornar Moçambique numa referência regional de produção de soluções tecnológicas.
               </p>
             </div>
-            <div>
+            <div className="text-center">
               <h3 className='font-bold mb-4'>Valores</h3>
               <p className="font-light">
                 Prezamos a colaboração, inovação e criação de soluções locais para problemas locais.
