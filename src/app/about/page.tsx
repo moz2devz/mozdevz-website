@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <div className="bg-hero bg-cover bg-center p-5 w-full">
+      <div className="bg-header bg-cover bg-center p-5 w-full">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-xl flex flex-col gap-6 pt-36 pb-20">
             <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
@@ -31,46 +31,46 @@ export default function About() {
             <div className="md:flex md:space-x-10 md:gap-28">
               <div className="mb-8 md:w-2/5">
                 <h2 className="text-[24px] md:text-4xl mb-4 md:mb-8">
-                  Take a look into how we got started.
+                  Quem nós somos
                 </h2>
                 <a className="text-blue-500 font-bold" href='#'>
                   Conheça a nossa team
                 </a>
               </div>
               <div className="md:w-3/5 mb-12">
-                <p className="mb-4 leading-loose">
-                  Exponent WordPress theme is insanely flexible and amazingly easy to use. This alone would be enough for a 5 star rating. On top of a great tool is even better customer support. The only theme you will ever need.
+                <p className="mb-4 leading-loose font-light">
+                  Somos uma comunidade de desenvolvedores moçambicanos de software e aplicações, que usa os seus talentos para contribuir para o desenvolvimento social da comunidade na qual estamos inseridos.
                 </p>
-                <p className="leading-loose">
-                  Over 30 high quality professionally designed pre-built website concepts to choose from. Build your website using a fully visual interface, using our revolutionary page & header builder.
+                <p className="leading-loose font-light">
+                  Acreditamos no poder das tecnologias de informação e comunicação (TIC) para mudar vidas. Vemos as TICs como infra-estrutura essencial para auxiliar a prestação de serviços e para a redução de problemas sociais.
                 </p>
               </div>
             </div>
             <div className="bg-about bg-cover bg-center p-5 w-full h h-96 min-h-full"></div>
           </div>
         </Section>
-        <Wrapper className='py-16 px-10 bg-[#fafbfd] '>
+        <Wrapper className='py-16 md:py-32 px-10 md:px-32 bg-[#fafbfd]'>
           <div className='mb-10 text-center'>
             <p className="mb-4">How we work</p>
-            <h2 className='text-2xl'>A simple process</h2>
+            <h2 className='text-2xl md:text-4xl md:font-semibold'>A simple process</h2>
           </div>
-          <div className='flex flex-col gap-10 text-center px-6'>
+          <div className='flex flex-col gap-10 text-center px-6 md:flex-row md:gap-10'>
+            <div>
+              <h3 className='font-bold mb-4'>Visão</h3>
+              <p className="font-light">
+                Ser uma plataforma activa e colaborativa que promova a integração local, continental e global das comunidades através do uso das tecnologias.
+              </p>
+            </div>
             <div>
               <h3 className='font-bold mb-4'>Missão</h3>
               <p className="font-light">
-                Wireframing has its pros and cons as it the crutial part of the design stage.
+                Usar as TICs para desenvolver o país, através do empoderamento, espírito de trabalho e partilha de conhecimento para tornar Moçambique numa referência regional de produção de soluções tecnológicas.
               </p>
             </div>
             <div>
               <h3 className='font-bold mb-4'>Valores</h3>
               <p className="font-light">
-                Wireframing has its pros and cons as it the crutial part of the design stage.
-              </p>
-            </div>
-            <div>
-              <h3 className='font-bold mb-4'>Visão</h3>
-              <p className="font-light">
-                Wireframing has its pros and cons as it the crutial part of the design stage.
+                Prezamos a colaboração, inovação e criação de soluções locais para problemas locais.
               </p>
             </div>
           </div>
