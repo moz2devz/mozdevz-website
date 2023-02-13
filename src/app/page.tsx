@@ -5,7 +5,6 @@ import { Desktop, Buildings } from 'phosphor-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
-import Wrapper from '@/components/layouts/Wrapper'
 import TeamMember from '@/components/cards/TeamMember'
 import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
 import Cases from '@/components/cards/Cases'
@@ -109,24 +108,6 @@ export default function Home() {
           </RevealList>
         </Section>
 
-        {/* Join the community */}
-        <Section>
-          <aside className="mb-6 md:mb-8 md:w-2/5">
-            <h2 className="text-[22px] md:text-2xl text-center">
-              Gostaria de participar dos nossos meetups e ser
-              membro da comunidade?
-            </h2>
-          </aside>
-          <RevealList reset={true} interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
-            <a className="button !rounded-none" href="#">
-              Ser membro da Mozdevz
-            </a>
-            <a className="button !rounded-none" href="#">
-              Participar de um meetup
-            </a>
-          </RevealList>
-        </Section>
-
         <Section>
           <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
@@ -172,9 +153,29 @@ export default function Home() {
           </RevealList>
         </Section>
 
+        {/* Join the community */}
+        <Section className='bg-[#fafbfd]'>
+          <div className="md:flex md:flex-col md:items-center">
+            <aside className="mb-6 md:mb-8 md:w-2/5">
+              <h2 className="text-[28px] font-bold md:text-2xl text-center">
+                Gostaria de participar dos nossos meetups e ser
+                membro da comunidade?
+              </h2>
+            </aside>
+            <RevealList reset={true} interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
+              <a className="button !rounded-none" href="#">
+                Ser membro da Mozdevz
+              </a>
+              <a className="button !rounded-none" href="#">
+                Participar de um meetup
+              </a>
+            </RevealList>
+          </div>
+        </Section>
+
         <Section>
           <div className='text-center max-w-md mx-auto'>
-            <h2 className="text-gray-900 text-3xl font-bold">Mozdevz Team</h2>
+            <h2 className="text-gray-900 text-3xl font-semibold">Mozdevz Team</h2>
             <p className="text-gray-600">
               A team responsavel por dirigir essa imensa comunidade de
               devz do Rovuma ao Maputo
