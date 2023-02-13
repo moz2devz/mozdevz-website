@@ -1,4 +1,4 @@
-import { RevealWrapper } from  'next-reveal'
+import { RevealWrapper } from 'next-reveal'
 
 const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
   { className, children },
@@ -6,8 +6,8 @@ const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
 ) => {
   return (
     <RevealWrapper origin='top' reset={true}>
-      <section className="section px-5 pt-16 pb-32" {...props}>
-        <div className={"w-full max-w-6xl mx-auto " + className}>
+      <section className={"section px-5 pt-16 pb-32 " + className} {...props}>
+        <div className="w-full max-w-6xl mx-auto">
           {children}
         </div>
       </section>

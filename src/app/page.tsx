@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Wrapper className='md:px-16 md:py-24 px-5 py-24 bg-[#fafbfd]'>
+        <Section className='bg-[#fafbfd]'>
           <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center gap-14">
             <div className="max-w-md flex flex-col gap-5">
               <h2 className="text-gray-900 text-3xl font-bold">
@@ -107,10 +107,10 @@ export default function Home() {
               }
             </div>
           </RevealList>
-        </Wrapper>
+        </Section>
 
         {/* Join the community */}
-        <Wrapper className='px-5 py-20 md:py-40 md:flex md:flex-col md:items-center'>
+        <Section>
           <aside className="mb-6 md:mb-8 md:w-2/5">
             <h2 className="text-[22px] md:text-2xl text-center">
               Gostaria de participar dos nossos meetups e ser
@@ -125,7 +125,7 @@ export default function Home() {
               Participar de um meetup
             </a>
           </RevealList>
-        </Wrapper>
+        </Section>
 
         <Section>
           <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
@@ -192,7 +192,7 @@ export default function Home() {
           </RevealList>
         </Section>
 
-        <Section>
+        <Section className="bg-[#fafbfd]">
           <div className='text-center max-w-md mx-auto'>
             <h2 className="text-gray-900 text-3xl font-bold mb-2">
               Parceiros e patrocinadores
