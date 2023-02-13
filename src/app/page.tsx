@@ -6,6 +6,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
+import Hero from '@/components/layouts/Hero'
+
 import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
 import Cases from '@/components/cards/Cases'
 import { RevealList } from 'next-reveal'
@@ -14,25 +16,21 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="bg-hero bg-cover bg-center p-5 w-full">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-xl flex flex-col gap-6 pt-36 pb-20">
-            <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
-              A maior comunidade de desenvolvedores de Moçambique
-            </h1>
-            <p className="text-gray-100">
-              Impactamos milhares de devz e impulsionamos carreiras
-            </p>
+      <Hero className="bg-hero">
+          <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
+            A maior comunidade de desenvolvedores de Moçambique
+          </h1>
+          <p className="text-gray-100">
+            Impactamos milhares de devz e impulsionamos carreiras
+          </p>
 
-            <a
-              className="button"
-              href="#"
-            >
-              Saiba mais
-            </a>
-          </div>
-        </div>
-      </div>
+          <a
+            className="button"
+            href="#"
+          >
+            Saiba mais
+          </a>
+      </Hero>
 
       <main>
         <Section>
@@ -77,7 +75,7 @@ export default function Home() {
         </Section>
 
         <Section className='bg-[#fafbfd]'>
-          <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center gap-14">
+          <RevealList interval={120} delay={500} className="flex flex-wrap items-center gap-14">
             <div className="max-w-md flex flex-col gap-5">
               <h2 className="text-gray-900 text-3xl font-bold">
                 Impactamos milhares de devz e impulsionamos carreiras
@@ -109,7 +107,7 @@ export default function Home() {
         </Section>
 
         <Section>
-          <RevealList reset={true} interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
+          <RevealList interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
               <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
                 <Desktop size={56} />
@@ -162,7 +160,7 @@ export default function Home() {
                 membro da comunidade?
               </h2>
             </aside>
-            <RevealList reset={true} interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
+            <RevealList interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
               <a className="button !rounded-none" href="#">
                 Ser membro da Mozdevz
               </a>
@@ -182,7 +180,7 @@ export default function Home() {
             </p>
           </div>
 
-          <RevealList reset={true} interval={60} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+          <RevealList interval={60} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
             {
               team.map((member, index) => {
                 return (
@@ -203,7 +201,7 @@ export default function Home() {
             </p>
           </div>
 
-          <RevealList reset={true} interval={75} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+          <RevealList interval={75} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
             {
               sponsors.map((sponsor, index) => {
                 return (

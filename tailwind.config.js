@@ -11,6 +11,9 @@ module.exports = {
         hero: "url('/assets/hero.jpg')",
         about: "url('/assets/mozdevz-about.jpg')",
         header: "url('/assets/about-cover.jpg')",
+      },
+      colors: { 
+        primary: "hsla(358, 75%, 55%, 1);"
       }
     },
   },

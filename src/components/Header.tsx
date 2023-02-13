@@ -58,14 +58,6 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/team"
-                  className="hover:opacity-70 transition-opacity font-medium"
-                >
-                  Team
-                </a>
-              </li>
-              <li>
-                <a
                   href="/contact"
                   className="hover:opacity-70 transition-opacity font-medium"
                 >
@@ -132,14 +124,6 @@ const Header: React.FC = () => {
                       className="hover:text-blue-500 transition-colors"
                     >
                       Sobre
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/team"
-                      className="hover:text-blue-500 transition-colors"
-                    >
-                      Team
                     </a>
                   </li>
                   <li>

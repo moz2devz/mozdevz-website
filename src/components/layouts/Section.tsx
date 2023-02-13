@@ -5,8 +5,8 @@ const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
   props
 ) => {
   return (
-    <RevealWrapper origin='top' reset={true}>
-      <section className={"section px-5 pt-16 pb-32 " + className} {...props}>
+    <RevealWrapper origin='top'>
+      <section className={"section px-5 py-32 " + className} {...props}>
         <div className="w-full max-w-6xl mx-auto">
           {children}
         </div>

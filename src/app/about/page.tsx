@@ -1,22 +1,24 @@
 'use client' // this is a client component
 
+import Image from "next/image"
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import Wrapper from '@/components/layouts/Wrapper'
+import Hero from '@/components/layouts/Hero'
+
+import img from "../../../public/assets/hero.jpg";
+
+
 export default function About() {
   return (
     <>
       <Header />
-      <div className="bg-header bg-cover bg-center p-5 w-full">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-xl flex flex-col gap-6 pt-36 pb-20">
-            <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
-              Impactamos milhares de devz e impulsionamos carreiras
-            </h1>
-          </div>
-        </div>
-      </div>
+      <Hero className="bg-header">
+        <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
+          Impactamos milhares de devz e impulsionamos carreiras
+        </h1>
+      </Hero>
 
       <main>
         <Section>
@@ -70,6 +72,36 @@ export default function About() {
             </div>
           </div>
         </Wrapper>
+
+        <Section>
+          <div className="flex flex-wrap justify-center xl:justify-between items-center gap-6">
+            <div className="max-w-2xl text-justify">
+              <h2 className='text-2xl md:text-4xl md:font-semibold mb-2 md:mb-8'>
+                Nosso manifesto
+              </h2>
+              <p className="leading-7 md:leading-loose">
+                Acreditamos no poder das tecnologias de informação e comunicação (TIC) para mudar vidas. Vemos as TICs como infra-estrutura essencial para auxiliar a prestação de serviços e para a redução de problemas sociais.
+              </p>
+              <p className="leading-7 md:leading-loose">
+                Embora o nosso objetivo final seja melhorar a vida das pessoas que vivem em comunidades, acreditamos que a melhor maneira de fazer isso é através do trabalho conjunto com as organizações - ONGs, organizações multilaterais, instituições governamentais ou do sector privado - que oferecem educação vital, relevo, serviços financeiros e outras.
+              </p>
+              <p className="leading-7 md:leading-loose">
+                Cada uma destas organizações tem objetivos e necessidades distintas; Da mesma forma, quando se trata de tecnologias apropriadas, rejeitamos uma abordagem one-size-fits all.
+              </p>
+              <p className="leading-7 md:leading-loose">
+                Acreditamos que mesmo a tecnologia mais adequada e sustentável requer um ecossistema de habilidades humanas para durar. A MozDevz trabalha com profissionais no país para construir a sua capacidade para desenvolver e gerenciar projetos de TICs, alimentando assim o ecossistema e a economia local de TIC para garantir a sustentabilidade de projectos atuais e futuros.
+              </p>
+              <p className="leading-7 md:leading-loose">
+                MozDevz é uma organização sem fins lucrativos com uma clara missão social - para ampliar e maximizar o impacto das TICs sobre a vida daqueles que mais precisam deles. Vemos os beneficiários de nosso trabalho como parceiros em um esforço conjunto para melhorar a qualidade de vida.
+              </p>
+              <p> Junta-te a nós! </p>
+            </div>
+            
+            <div className="h-[600px] max-w-md w-full bg-hero bg-cover bg-center">
+            </div>
+          </div>
+        </Section>
+
       </main>
       <Footer />
     </>

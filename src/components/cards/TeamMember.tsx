@@ -13,7 +13,7 @@ interface TeamMemberProps {
 
 const TeamMember:React.FC<TeamMemberProps> = (props) => {
   return (
-    <div className="max-w-[250px] w-full">
+    <div className="w-full max-w-[500px] sm:max-w-[300px]">
       <div className="relative group mb-5">
         <div>
           <Image src={ props.img } alt={ props.name } className="w-full" />

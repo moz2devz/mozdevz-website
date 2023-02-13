@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .section:nth-child(even) {
-  @apply bg-gray-100/40
+  @apply bg-red-500
 }
 
 .recognition:nth-child(1) {
@@ -19,7 +19,7 @@
 }
 
 .button {
-  @apply brightnessDownWhenHover py-3 px-10 rounded bg-blue-500 font-medium text-white uppercase max-w-max
+  @apply brightnessDownWhenHover py-3 px-10 rounded bg-primary font-medium text-white uppercase max-w-max
 }
 
 .brightnessDownWhenHover {

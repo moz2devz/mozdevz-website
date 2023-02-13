@@ -5,7 +5,7 @@ const Wrapper: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
   props
 ) => {
   return (
-    <RevealWrapper origin='top' reset={true}>
+    <RevealWrapper origin='top'>
       <section className="" {...props}>
         <div className={"" + className}>
           {children}
