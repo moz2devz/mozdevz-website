@@ -30,7 +30,7 @@ const team = [
     role: "Presidente",
     instagram: "https://www.instagram.com/LSambo02",
     twitter: "https://www.twitter.com/LSambo02",
-    facebook: "https://www.linkedin.com/in/igorlsambo",
+    linkedin: "https://www.linkedin.com/in/igorlsambo",
     img: igorImg
   },
   {
@@ -38,7 +38,7 @@ const team = [
     role: "Vice-Presidente",
     instagram: "#",
     twitter: "https://twitter.com/odilia_nh",
-    cebook: "https://www.linkedin.com/in/od%C3%ADlia-nhacundela-0b6a7311b",
+    linkedin: "https://www.linkedin.com/in/od%C3%ADlia-nhacundela-0b6a7311b",
     img: odiliaImg
   },
   {
@@ -46,7 +46,7 @@ const team = [
     role: "Gestora de projectos",
     instagram: "https://www.instagram.com/carrima001",
     twitter: "#",
-    facebook: "https://www.linkedin.com/in/carrima-januario/",
+    linkedin: "https://www.linkedin.com/in/carrima-januario/",
     img: carrimaImg
   },
   {
@@ -54,15 +54,15 @@ const team = [
     role: "Gestor de Comunidades",
     instagram: "https://www.instagram.com/fred_cuambe",
     twitter: "https://www.linkedin.com/in/fred-cuambe-7194a8240",
-    facebook: "#",
+    linkedin: "#",
     img: fredImg
   },
   {
     name: "Fenilde Chiluvane",
     role: "Gestora de Comunicação",
     instagram: "https://www.instagram.com/fenilde_clelio/ ",
-    itter: "#",
-    facebook: "https://www.linkedin.com/in/fenilde-chiluvane-1994791b2",
+    twitter: "#",
+    linkedin: "https://www.linkedin.com/in/fenilde-chiluvane-1994791b2",
     img: fenildeImg
   },
   {
@@ -70,7 +70,7 @@ const team = [
     role: "Gestor de Imagem",
     instagram: "#",
     twitter: "https://twitter.com/themisterpaps",
-    facebook: "ww.linkedin.com/in/henriquechigumane",
+    linkedin: "https://www.linkedin.com/in/henriquechigumane",
     img: papsImg
   },
 ]
