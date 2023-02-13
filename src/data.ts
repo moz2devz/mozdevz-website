@@ -1,5 +1,10 @@
 // Team members images
-import igorImg from "../public/assets/team/igor.jpg";
+import igorImg from "../public/assets/team/igor.png";
+import fenildeImg from "../public/assets/team/fenilde.png";
+import odiliaImg from "../public/assets/team/odilia.png";
+import fredImg from "../public/assets/team/fred.png";
+import papsImg from "../public/assets/team/paps.jpg";
+import carrimaImg from "../public/assets/team/carrima.png";
 
 // Sponsors logo
 import ccaLogo from "../public/assets/sponsors/cca.png";
@@ -23,50 +28,50 @@ const team = [
   {
     name: "Igor L. Sambo",
     role: "Presidente",
-    instagram: "#",
-    twitter: "#",
-    facebook: "#",
+    instagram: "https://www.instagram.com/LSambo02",
+    twitter: "https://www.twitter.com/LSambo02",
+    facebook: "https://www.linkedin.com/in/igorlsambo",
     img: igorImg
   },
   {
     name: "Odília Nhacundela",
     role: "Vice-Presidente",
     instagram: "#",
-    twitter: "#",
-    facebook: "#",
-    img: igorImg
+    twitter: "https://twitter.com/odilia_nh",
+    cebook: "https://www.linkedin.com/in/od%C3%ADlia-nhacundela-0b6a7311b",
+    img: odiliaImg
   },
   {
     name: "Carrima Januário",
     role: "Gestora de projectos",
-    instagram: "#",
+    instagram: "https://www.instagram.com/carrima001",
     twitter: "#",
-    facebook: "#",
-    img: igorImg
+    facebook: "https://www.linkedin.com/in/carrima-januario/",
+    img: carrimaImg
   },
   {
     name: "Fred Cuambe",
     role: "Gestor de Comunidades",
-    instagram: "#",
-    twitter: "#",
+    instagram: "https://www.instagram.com/fred_cuambe",
+    twitter: "https://www.linkedin.com/in/fred-cuambe-7194a8240",
     facebook: "#",
-    img: igorImg
+    img: fredImg
   },
   {
     name: "Fenilde Chiluvane",
     role: "Gestora de Comunicação",
-    instagram: "#",
-    twitter: "#",
-    facebook: "#",
-    img: igorImg
+    instagram: "https://www.instagram.com/fenilde_clelio/ ",
+    itter: "#",
+    facebook: "https://www.linkedin.com/in/fenilde-chiluvane-1994791b2",
+    img: fenildeImg
   },
   {
     name: "Henrique (Mister Paps)",
     role: "Gestor de Imagem",
     instagram: "#",
-    twitter: "#",
-    facebook: "#",
-    img: igorImg
+    twitter: "https://twitter.com/themisterpaps",
+    facebook: "ww.linkedin.com/in/henriquechigumane",
+    img: papsImg
   },
 ]
 
