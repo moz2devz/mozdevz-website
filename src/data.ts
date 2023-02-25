@@ -7,7 +7,6 @@ import papsImg from "../public/assets/team/paps.jpg";
 import carrimaImg from "../public/assets/team/carrima.png";
 
 // Sponsors logo
-import ccaLogo from "../public/assets/sponsors/cca.png";
 import ciuemLogo from "../public/assets/sponsors/ciuem.png";
 import coworklabLogo from "../public/assets/sponsors/coworklab.png";
 import mctestpLogo from "../public/assets/sponsors/mctestp.png";
