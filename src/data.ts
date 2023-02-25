@@ -77,10 +77,6 @@ const team = [
 
 const sponsors = [
   {
-    name: "Centro cultural americano",
-    logo: ccaLogo
-  },
-  {
     name: "Ciuem",
     logo: ciuemLogo
   },
