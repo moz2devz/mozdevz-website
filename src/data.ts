@@ -10,6 +10,7 @@ import carrimaImg from "../public/assets/team/carrima.png";
 import espaco_uem from "../public/assets/sponsors/espaco_uem.png"
 import ciuemLogo from "../public/assets/sponsors/ciuem.png";
 import coworklabLogo from "../public/assets/sponsors/coworklab.png";
+import banco_mundialLogo from "../public/assets/sponsors/banco_mundial.png";
 import mctestpLogo from "../public/assets/sponsors/mctestp.png";
 import oxfamLogo from "../public/assets/sponsors/oxfam.png";
 import psiLogo from "../public/assets/sponsors/psi.png";
@@ -87,6 +88,10 @@ const sponsors = [
   {
     name: "Co-work lab",
     logo: coworklabLogo
+  },
+  {
+    name: "Banco Mundial",
+    logo: banco_mundialLogo
   },
   {
     name: "Ministério da Ciência, Tecnologia e Ensino Superior",
