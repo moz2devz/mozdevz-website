@@ -65,7 +65,7 @@ export default function Home() {
                 desenvolvidas.
               </p>
               <a
-                className="button"
+                className="text-primary font-bold border-solid border border-red-500 py-2 px-4 inline-block max-w-max"
                 href="#"
               >
                 Saiba mais
@@ -213,7 +213,7 @@ export default function Home() {
             }
           </RevealList>
         </Section>
-      </main>
+      </main >
       <Footer />
     </>
   )
