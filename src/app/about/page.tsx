@@ -28,7 +28,7 @@ export default function About() {
                 <h2 className="text-[24px] md:text-4xl mb-4 md:mb-8">
                   Quem nós somos
                 </h2>
-                <a className="text-blue-500 font-bold" href='#'>
+                <a className="text-primary font-bold" href='#'>
                   Conheça a nossa team
                 </a>
               </div>
@@ -96,7 +96,7 @@ export default function About() {
               </p>
               <p> Junta-te a nós! </p>
             </div>
-            
+
             <div className="h-[600px] max-w-md w-full bg-hero bg-cover bg-center">
             </div>
           </div>
