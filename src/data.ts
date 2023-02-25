@@ -7,6 +7,7 @@ import papsImg from "../public/assets/team/paps.jpg";
 import carrimaImg from "../public/assets/team/carrima.png";
 
 // Sponsors logo
+import espaco_uem from "../public/assets/sponsors/espaco_uem.png"
 import ciuemLogo from "../public/assets/sponsors/ciuem.png";
 import coworklabLogo from "../public/assets/sponsors/coworklab.png";
 import mctestpLogo from "../public/assets/sponsors/mctestp.png";
@@ -78,6 +79,10 @@ const sponsors = [
   {
     name: "Ciuem",
     logo: ciuemLogo
+  },
+  {
+    name: "Espaço de Inovação UEM",
+    logo: espaco_uem
   },
   {
     name: "Co-work lab",
