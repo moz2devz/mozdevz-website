@@ -25,10 +25,10 @@ export default function Home() {
         </p>
 
         <a
-          className="button"
+          className="button block lg:hidden"
           href="#"
         >
-          Saiba mais
+          Junta-se a comunidade
         </a>
       </Hero>
 
