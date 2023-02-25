@@ -47,7 +47,7 @@ export default function About() {
         <Wrapper className='py-16 md:py-32 px-10 md:px-32 bg-[#fafbfd]'>
           <div className='mb-10'>
             <p className="mb-4">Nossa Identidade</p>
-            <h2 className='text-2xl md:text-4xl md:font-semibold'>
+            <h2 className='text-2xl text-primary md:text-4xl md:font-semibold'>
               Comunidade. Tecnologia. Experiências
             </h2>
           </div>
@@ -94,7 +94,7 @@ export default function About() {
               <p className="leading-7 md:leading-loose">
                 MozDevz é uma organização sem fins lucrativos com uma clara missão social - para ampliar e maximizar o impacto das TICs sobre a vida daqueles que mais precisam deles. Vemos os beneficiários de nosso trabalho como parceiros em um esforço conjunto para melhorar a qualidade de vida.
               </p>
-              <p> Junta-te a nós! </p>
+              <p className="text-primary font-bold"> Junta-te a nós! </p>
             </div>
 
             <div className="h-[600px] max-w-md w-full bg-hero bg-cover bg-center">
