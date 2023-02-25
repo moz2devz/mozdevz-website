@@ -84,7 +84,7 @@ export default function Home() {
                 Somos uma comunidade de desenvolvedores moçambicanos de software e aplicações. Usamos os nossos talentos para contribuir para o desenvolvimento social da comunidade na qual estamos inseridos.
               </p>
 
-              <a href="#" className="text-blue-500 font-bold">
+              <a href="#" className="text-primary font-bold">
                 Saiba mais
               </a>
             </div>
@@ -94,7 +94,7 @@ export default function Home() {
                 recognitions.map((recognition, index) => {
                   return (
                     <div key={index} className="recognition flex flex-col gap-2 w-full">
-                      <span className="text-blue-500 text-4xl font-medium block">
+                      <span className="text-primary text-4xl font-medium block">
                         +{recognition.number}
                       </span>
                       <span className="block font-bold">{recognition.text}</span>
