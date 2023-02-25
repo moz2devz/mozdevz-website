@@ -45,26 +45,26 @@ export default function About() {
           </div>
         </Section>
         <Wrapper className='py-16 md:py-32 px-10 md:px-32 bg-[#fafbfd]'>
-          <div className='mb-10 text-center'>
+          <div className='mb-10'>
             <p className="mb-4">Nossa Identidade</p>
-            <h2 className='text-2xl text-center md:text-4xl md:font-semibold'>
+            <h2 className='text-2xl text-primary md:text-4xl md:font-semibold'>
               Comunidade. Tecnologia. Experiências
             </h2>
           </div>
           <div className='md:grid md:gap-16 md:grid-cols-3'>
-            <div className="text-center">
-              <h3 className='font-bold mb-4'>Visão</h3>
-              <p className="font-light">
-                Ser uma plataforma activa e colaborativa que promova a integração local, continental e global das comunidades através do uso das tecnologias.
-              </p>
-            </div>
-            <div className="text-center">
+            <div>
               <h3 className='font-bold mb-4'>Missão</h3>
               <p className="font-light">
                 Usar as TICs para desenvolver o país, através do empoderamento, espírito de trabalho e partilha de conhecimento para tornar Moçambique numa referência regional de produção de soluções tecnológicas.
               </p>
             </div>
-            <div className="text-center">
+            <div>
+              <h3 className='font-bold mb-4'>Visão</h3>
+              <p className="font-light">
+                Ser uma plataforma activa e colaborativa que promova a integração local, continental e global das comunidades através do uso das tecnologias.
+              </p>
+            </div>
+            <div>
               <h3 className='font-bold mb-4'>Valores</h3>
               <p className="font-light">
                 Prezamos a colaboração, inovação e criação de soluções locais para problemas locais.
@@ -94,7 +94,7 @@ export default function About() {
               <p className="leading-7 md:leading-loose">
                 MozDevz é uma organização sem fins lucrativos com uma clara missão social - para ampliar e maximizar o impacto das TICs sobre a vida daqueles que mais precisam deles. Vemos os beneficiários de nosso trabalho como parceiros em um esforço conjunto para melhorar a qualidade de vida.
               </p>
-              <p> Junta-te a nós! </p>
+              <p className="text-primary font-bold"> Junta-te a nós! </p>
             </div>
 
             <div className="h-[600px] max-w-md w-full bg-hero bg-cover bg-center">
