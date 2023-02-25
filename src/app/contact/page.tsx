@@ -37,7 +37,7 @@ export default function Contact() {
 
             <div className="flex flex-col gap-10 max-w-md w-full mx-auto">
               <div className="max-w-sm flex items-start gap-5">
-                <div className="bg-blue-500 p-4 rounded-full text-white brightnessDownWhenHover">
+                <div className="bg-primary p-4 rounded-full text-white brightnessDownWhenHover">
                   <NavigationArrow size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -46,7 +46,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="max-w-sm flex items-start gap-5">
-                <div className="bg-blue-500 p-4 rounded-full text-white brightnessDownWhenHover">
+                <div className="bg-primary p-4 rounded-full text-white brightnessDownWhenHover">
                   <DeviceMobile size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -55,7 +55,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="max-w-sm flex items-start gap-5">
-                <div className="bg-blue-500 p-4 rounded-full text-white brightnessDownWhenHover">
+                <div className="bg-primary p-4 rounded-full text-white brightnessDownWhenHover">
                   <EnvelopeSimple size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
