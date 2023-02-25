@@ -21,8 +21,12 @@ export default function Contact() {
           <div className="flex flex-wrap gap-6">
             <div className="py-16 px-5 md:px-16 rounded shadow -mt-44 bg-white flex flex-col gap-6 w-full max-w-md mx-auto md:max-w-2xl md:mx-0">
               <div className="flex flex-col gap-6">
-                <h2 className="text-gray-900 text-3xl font-semibold">Reach out to us</h2>
-                <p className="text-gray-600">Dont be shy, Just tell us about yourself and we&apos;ll figure out the best option for you and your project.</p>
+                <h2 className="text-gray-900 text-3xl font-semibold">
+                  Fale connosco
+                </h2>
+                <p className="text-gray-600">
+                  Estamos sempre em busca de novos parceiros que possam se beneficiar de nossa expertise e colaborar conosco para desenvolver projetos incríveis juntos.
+                </p>
               </div>
               <form className="w-full flex flex-col gap-6">
                 <div className="flex flex-wrap md:flex-nowrap gap-6">
@@ -41,8 +45,10 @@ export default function Contact() {
                   <NavigationArrow size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg text-gray-800 font-bold">Visit Us</h3>
-                  <p className="text-gray-600 text-lg">Express Chambers II Spaces Works, Level 5, Royapettah, Chennai - 600014</p>
+                  <h3 className="text-lg text-gray-800 font-bold">Visite-nos</h3>
+                  <p className="text-gray-600 text-lg">
+                    CoWork Lab 7,  Avenida Marginal, nº 9149A Maputo, 1102
+                  </p>
                 </div>
               </div>
               <div className="max-w-sm flex items-start gap-5">
@@ -50,8 +56,8 @@ export default function Contact() {
                   <DeviceMobile size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg text-gray-800 font-bold">Call Us</h3>
-                  <p className="text-gray-600 text-lg">+258 84 399 7730</p>
+                  <h3 className="text-lg text-gray-800 font-bold">Ligue-nos</h3>
+                  <p className="text-gray-600 text-lg">+258 84 856 5131</p>
                 </div>
               </div>
               <div className="max-w-sm flex items-start gap-5">
@@ -59,7 +65,7 @@ export default function Contact() {
                   <EnvelopeSimple size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg text-gray-800 font-bold">Email Us</h3>
+                  <h3 className="text-lg text-gray-800 font-bold">Escreva-nos</h3>
                   <p className="text-gray-600 text-lg">contacto@mozdevz.org</p>
                 </div>
               </div>
