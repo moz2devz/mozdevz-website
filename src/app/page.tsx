@@ -201,7 +201,7 @@ export default function Home() {
             </p>
           </div>
 
-          <RevealList interval={75} delay={500} className="mt-10 w-full flex flex-wrap gap-16 justify-center">
+          <RevealList interval={75} delay={500} className="mt-10 md:px-32 w-full flex flex-wrap gap-16 justify-center">
             {
               sponsors.map((sponsor, index) => {
                 return (
