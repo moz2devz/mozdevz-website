@@ -66,7 +66,7 @@ export default function Home() {
               </p>
               <a
                 className="text-primary font-bold border-solid border border-red-500 py-2 px-4 inline-block max-w-max"
-                href="#"
+                href="/about"
               >
                 Saiba mais
               </a>
