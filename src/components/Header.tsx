@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { List, X } from 'phosphor-react'
 import Image from 'next/image'
 import logo from "../../public/assets/logo.png";
+import logoWhite from "../../public/assets/logo-white.png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -22,7 +23,7 @@ const Header: React.FC = () => {
         }`}
     >
       <div
-        className={`w-full bg-black/60  right-0 top-0 h-screen ${isMenuOpen ? 'absolute z-20 w-screen' : 'hidden w-0'
+        className={`w-full bg-black/60 right-0 top-0 h-screen ${isMenuOpen ? 'absolute z-20 w-screen' : 'hidden w-0'
           }`}
       ></div>
 
@@ -31,53 +32,58 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-8">
             <span className="text-2xl font-bold block">
               <Image
-                src={logo}
+                src={ scrollY > 200 ? logo : logoWhite }
                 width={130}
                 alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
               />
             </span>
           </div>
 
-          <nav>
-            <ul className="flex items-center gap-5 font-thin text-sm">
-              <li>
-                <a
-                  href="/"
-                  className="hover:opacity-70 transition-opacity font-medium"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  className="hover:opacity-70 transition-opacity font-medium"
-                >
-                  Sobre
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
-                  className="hover:opacity-70 transition-opacity font-medium"
-                >
-                  Contacto
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <a
-            className="button text-sm"
-            href="#"
-          >
-            Juntar-se a comunidade
-          </a>
+          <div className="w-full flex gap-10 justify-end items-center">
+            <nav>
+              <ul className="flex items-center gap-5 text-sm">
+                <li>
+                  <a
+                    href="/"
+                    className="hover:opacity-70 transition-opacity font-bold"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about"
+                    className="hover:opacity-70 transition-opacity font-bold"
+                  >
+                    Sobre
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    className="hover:opacity-70 transition-opacity font-bold"
+                  >
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a
+              className="button text-sm"
+              href="#"
+            >
+              Juntar-se a comunidade
+            </a>
+          </div>
         </div>
 
         <div className="flex justify-between lg:hidden">
           <span className="text-2xl font-bold block">
-            <a href="/">MozDevz</a>
+              <Image
+                src={ scrollY > 200 ? logo : logoWhite }
+                width={130}
+                alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
+              />
           </span>
 
           <List
@@ -96,7 +102,11 @@ const Header: React.FC = () => {
             <div className="bg-white h-screen w-full max-w-xs min-w-[300px] p-8 text-black">
               <div className="flex gap-3 justify-between items-center">
                 <span className="text-2xl font-bold block">
-                  <a href="/">MozDevz</a>
+                  <Image
+                    src={logo}
+                    width={130}
+                    alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
+                  />
                 </span>
 
                 <X
@@ -111,7 +121,7 @@ const Header: React.FC = () => {
                 />
               </div>
 
-              <nav className="block my-20">
+              <nav className="block mt-28 mb-10">
                 <ul className="flex flex-col gap-5 font-thin">
                   <li>
                     <a href="/" className="text-blue-500 transition-colors">
@@ -138,10 +148,10 @@ const Header: React.FC = () => {
               </nav>
 
               <a
-                className="py-2 px-5 rounded bg-blue-500 font-bold text-white"
+                className="button !px-5 !text-sm"
                 href="#"
               >
-                Juntar-se a equipe
+                Juntar-se a comunidade
               </a>
             </div>
           </div>
