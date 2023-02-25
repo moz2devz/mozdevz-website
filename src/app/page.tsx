@@ -17,19 +17,19 @@ export default function Home() {
     <>
       <Header />
       <Hero className="bg-hero">
-          <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
-            A maior comunidade de desenvolvedores de Moçambique
-          </h1>
-          <p className="text-gray-100">
-            Impactamos milhares de devz e impulsionamos carreiras
-          </p>
+        <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
+          A maior comunidade de desenvolvedores de Moçambique
+        </h1>
+        <p className="text-gray-100">
+          Impactamos milhares de devz e impulsionamos carreiras
+        </p>
 
-          <a
-            className="button"
-            href="#"
-          >
-            Saiba mais
-          </a>
+        <a
+          className="button"
+          href="#"
+        >
+          Saiba mais
+        </a>
       </Hero>
 
       <main>
@@ -109,7 +109,7 @@ export default function Home() {
         <Section>
           <RevealList interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
+              <div className="p-5 rounded-full text-primary brightnessDownWhenHover">
                 <Desktop size={56} />
               </div>
               <div className="text-center">
@@ -122,7 +122,7 @@ export default function Home() {
             </div>
 
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
+              <div className="p-5 rounded-full text-primary brightnessDownWhenHover">
                 <Buildings size={56} />
               </div>
               <div className="text-center">
@@ -136,7 +136,7 @@ export default function Home() {
             </div>
 
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
+              <div className="p-5 rounded-full text-primary brightnessDownWhenHover">
                 <Buildings size={56} />
               </div>
               <div className="text-center">
