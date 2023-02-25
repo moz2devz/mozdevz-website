@@ -35,11 +35,11 @@ export default function Home() {
       <main>
         <Section>
           <div className="flex flex-wrap gap-10 items-center justify-between">
-            <div className="flex flex-wrap justify-center gap-5">
+            <div className="flex flex-wrap justify-center gap-8">
               {
                 whyMozDevz.map((items, index) => {
                   return (
-                    <div key={index} className={`flex flex-col gap-5 ${index == 1 ? "md:-translate-y-6" : ""}`}>
+                    <div key={index} className={`flex flex-col gap-8 ${index == 1 ? "md:-translate-y-6" : ""}`}>
                       {
                         items.map((item, index) => {
                           return (
