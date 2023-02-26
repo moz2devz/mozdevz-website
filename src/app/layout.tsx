@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={`${hind.variable} ${raleway.variable} `}>{children}</body>
+      <body className={`${hind.variable} ${raleway.variable} font-body`}>{children}</body>
     </html>
   )
 }

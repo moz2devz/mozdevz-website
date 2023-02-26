@@ -11,7 +11,7 @@ export default function Contact() {
     <>
       <Header />
       <Hero className="bg-header">
-        <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
+        <h1 className="text-4xl md:text-5xl text-white break-words">
           Sempre aqui para ter uma conversa
         </h1>
       </Hero>
@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="flex flex-wrap gap-6">
             <div className="py-16 px-5 md:px-16 rounded shadow -mt-44 bg-white flex flex-col gap-6 w-full max-w-md mx-auto md:max-w-2xl md:mx-0">
               <div className="flex flex-col gap-6">
-                <h2 className="text-gray-900 text-3xl font-semibold">
+                <h2 className="text-gray-900 text-3xl">
                   Fale connosco
                 </h2>
                 <p className="text-gray-600">
@@ -45,7 +45,7 @@ export default function Contact() {
                   <NavigationArrow size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg text-gray-800 font-bold">Visite-nos</h3>
+                  <h3 className="text-lg text-gray-800">Visite-nos</h3>
                   <p className="text-gray-600 text-lg">
                     CoWork Lab 7,  Avenida Marginal, nº 9149A Maputo, 1102
                   </p>
@@ -56,7 +56,7 @@ export default function Contact() {
                   <DeviceMobile size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg text-gray-800 font-bold">Ligue-nos</h3>
+                  <h3 className="text-lg text-gray-800">Ligue-nos</h3>
                   <p className="text-gray-600 text-lg">+258 84 856 5131</p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                   <EnvelopeSimple size={38} />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg text-gray-800 font-bold">Escreva-nos</h3>
+                  <h3 className="text-lg text-gray-800">Escreva-nos</h3>
                   <p className="text-gray-600 text-lg">contacto@mozdevz.org</p>
                 </div>
               </div>
