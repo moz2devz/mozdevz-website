@@ -12,7 +12,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/assets/hero.webp')",
         about: "url('/assets/mozdevz-about.webp')",
-        header: "url('/assets/about-cover.jpg')",
+        header: "url('/assets/about-cover.webp')",
       },
       colors: {
         primary: "hsla(358, 75%, 55%, 1);"
