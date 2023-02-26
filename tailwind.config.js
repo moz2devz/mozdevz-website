@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -14,7 +16,11 @@ module.exports = {
       },
       colors: {
         primary: "hsla(358, 75%, 55%, 1);"
-      }
+      },
+      fontFamily: {
+        body: ['var(--font-hind)', ...fontFamily.sans],
+        headings: ['var(--font-raleway)', ...fontFamily.sans],
+      },
     },
   },
   plugins: [],

@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Header />
       <Hero className="bg-hero">
-        <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
+        <h1 className="text-4xl md:text-5xl text-white break-words">
           A maior comunidade de desenvolvedores de Moçambique
         </h1>
         <p className="text-gray-100">
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
 
             <div className="max-w-sm flex flex-col gap-5">
-              <h2 className="text-gray-900 text-3xl font-bold">
+              <h2 className="text-gray-900 text-3xl">
                 Aprendemos em comunidade
               </h2>
               <p className="text-gray-600">
@@ -77,7 +77,7 @@ export default function Home() {
         <Section className='bg-[#fafbfd]'>
           <RevealList interval={120} delay={500} className="flex flex-wrap items-center gap-14">
             <div className="max-w-md flex flex-col gap-5">
-              <h2 className="text-gray-900 text-3xl font-bold">
+              <h2 className="text-gray-900 text-3xl">
                 Impactamos milhares de devz e impulsionamos carreiras
               </h2>
               <p className="text-gray-600">
@@ -113,7 +113,7 @@ export default function Home() {
                 <Desktop size={56} />
               </div>
               <div className="text-center">
-                <h3 className="text-xl text-gray-800 font-bold">Talentos</h3>
+                <h3 className="text-xl text-gray-800">Talentos</h3>
                 <p className="mt-4">
                   Capacitados e desenvolvemos talentos com o objective de
                   preprarar e integrar no mercado de trabalho atraves da nossa rede de parceiros.
@@ -126,7 +126,7 @@ export default function Home() {
                 <Buildings size={56} />
               </div>
               <div className="text-center">
-                <h3 className="text-xl text-gray-800 font-bold">Startup</h3>
+                <h3 className="text-xl text-gray-800">Startup</h3>
                 <p className="mt-4">
                   Apoiamos equipas multidisplinares com orientação e capacitação
                   no desenvolvimento de soluções tecnológicas em ambientes de
@@ -140,7 +140,7 @@ export default function Home() {
                 <Buildings size={56} />
               </div>
               <div className="text-center">
-                <h3 className="text-xl text-gray-800 font-bold">Corporate</h3>
+                <h3 className="text-xl text-gray-800">Corporate</h3>
                 <p className="mt-4">
                   Firmamos parceirias e trabalhamos com empresas e ONGs no
                   desenvolvimento de soluções de base tecnológica para a
@@ -155,7 +155,7 @@ export default function Home() {
         <Section className='bg-[#fafbfd]'>
           <div className="md:flex md:flex-col md:items-center">
             <aside className="mb-6 md:mb-8 md:w-2/5">
-              <h2 className="text-[28px] font-bold md:text-2xl text-center">
+              <h2 className="text-[28px] md:text-2xl text-center">
                 Gostaria de participar dos nossos meetups e ser
                 membro da comunidade?
               </h2>
@@ -173,7 +173,7 @@ export default function Home() {
 
         <Section>
           <div className='text-center max-w-md mx-auto'>
-            <h2 className="text-gray-900 text-3xl font-semibold">Mozdevz Team</h2>
+            <h2 className="text-gray-900 text-3xl">Mozdevz Team</h2>
             <p className="text-gray-600">
               A team responsavel por dirigir essa imensa comunidade de
               devz do Rovuma ao Maputo
@@ -193,7 +193,7 @@ export default function Home() {
 
         <Section className="bg-[#fafbfd]">
           <div className='text-center max-w-md mx-auto'>
-            <h2 className="text-gray-900 text-3xl font-bold mb-2">
+            <h2 className="text-gray-900 text-3xl mb-2">
               Parceiros e patrocinadores
             </h2>
             <p className="text-gray-600">
