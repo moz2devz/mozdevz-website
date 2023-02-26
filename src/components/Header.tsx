@@ -5,6 +5,13 @@ import { List, X } from 'phosphor-react'
 import Image from 'next/image'
 import logo from "../../public/assets/logo.png";
 import logoWhite from "../../public/assets/logo-white.png";
+import ActiveLink from './ActiveLink';
+
+const menuItems = [
+  { name: "Home", href: "/" },
+  { name: "Sobre", href: "/about" },
+  { name: "Contacto", href: "/contact" },
+]
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -42,30 +49,19 @@ const Header: React.FC = () => {
           <div className="w-full flex gap-10 justify-end items-center">
             <nav>
               <ul className="flex items-center gap-5 text-sm">
-                <li>
-                  <a
-                    href="/"
-                    className="hover:opacity-70 transition-opacity font-bold"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/about"
-                    className="hover:opacity-70 transition-opacity font-bold"
-                  >
-                    Sobre
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/contact"
-                    className="hover:opacity-70 transition-opacity font-bold"
-                  >
-                    Contacto
-                  </a>
-                </li>
+                { menuItems.map(menuItem => {
+                  return (
+                    <li key={menuItem.href}>
+                      <ActiveLink
+                        href={ menuItem.href }
+                        className="font-bold hover:text-red-500 transition-colors"
+                        activeClassName="text-red-500"
+                      >
+                        { menuItem.name }
+                      </ActiveLink>
+                    </li>
+                  )
+                }) }
               </ul>
             </nav>
             <a
@@ -123,27 +119,19 @@ const Header: React.FC = () => {
 
               <nav className="block mt-28 mb-10">
                 <ul className="flex flex-col gap-5 font-thin">
-                  <li>
-                    <a href="/" className="text-blue-500 transition-colors">
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/about"
-                      className="hover:text-blue-500 transition-colors"
-                    >
-                      Sobre
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/contact"
-                      className="hover:text-blue-500 transition-colors"
-                    >
-                      Contacto
-                    </a>
-                  </li>
+                  { menuItems.map(menuItem => {
+                    return (
+                      <li key={menuItem.href}>
+                        <ActiveLink
+                          href={ menuItem.href }
+                          className="font-bold hover:text-red-500 transition-colors"
+                          activeClassName="text-red-500"
+                        >
+                          { menuItem.name }
+                        </ActiveLink>
+                      </li>
+                    )
+                  }) }
                 </ul>
               </nav>
 
