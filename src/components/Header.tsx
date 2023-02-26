@@ -6,6 +6,7 @@ import Image from 'next/image'
 import logo from "../../public/assets/logo.png";
 import logoWhite from "../../public/assets/logo-white.png";
 import ActiveLink from './ActiveLink';
+import Link from 'next/link';
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -37,13 +38,13 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto p-5">
         <div className="hidden items-center justify-between lg:flex">
           <div className="flex items-center gap-8">
-            <span className="text-2xl font-bold block">
+            <Link href="/" className="text-2xl font-bold block">
               <Image
                 src={ scrollY > 200 ? logo : logoWhite }
                 width={130}
                 alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
               />
-            </span>
+            </Link>
           </div>
 
           <div className="w-full flex gap-10 justify-end items-center">
@@ -74,13 +75,13 @@ const Header: React.FC = () => {
         </div>
 
         <div className="flex justify-between lg:hidden">
-          <span className="text-2xl font-bold block">
-              <Image
-                src={ scrollY > 200 ? logo : logoWhite }
-                width={130}
-                alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
-              />
-          </span>
+          <Link href="/" className="text-2xl font-bold block">
+            <Image
+              src={ scrollY > 200 ? logo : logoWhite }
+              width={130}
+              alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
+            />
+          </Link>
 
           <List
             size={32}
@@ -97,13 +98,13 @@ const Header: React.FC = () => {
           >
             <div className="bg-white h-screen w-full max-w-xs min-w-[300px] p-8 text-black">
               <div className="flex gap-3 justify-between items-center">
-                <span className="text-2xl font-bold block">
+                <Link href="/" className="text-2xl font-bold block">
                   <Image
                     src={logo}
                     width={130}
                     alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
                   />
-                </span>
+                </Link>
 
                 <X
                   size={24}
