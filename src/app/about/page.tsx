@@ -1,13 +1,10 @@
 'use client' // this is a client component
 
-import Image from "next/image"
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import Wrapper from '@/components/layouts/Wrapper'
 import Hero from '@/components/layouts/Hero'
-
-import img from "../../../public/assets/hero.jpg";
 
 
 export default function About() {
