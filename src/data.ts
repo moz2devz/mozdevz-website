@@ -1,10 +1,10 @@
 // Team members images
-import igorImg from "../public/assets/team/igor.png";
+import igorImg from "../public/assets/team/igor.webp";
 import fenildeImg from "../public/assets/team/fenilde.webp";
-import odiliaImg from "../public/assets/team/odilia.png";
-import fredImg from "../public/assets/team/fred.png";
-import papsImg from "../public/assets/team/paps.jpg";
-import carrimaImg from "../public/assets/team/carrima.png";
+import odiliaImg from "../public/assets/team/odilia.webp";
+import fredImg from "../public/assets/team/fred.webp";
+import papsImg from "../public/assets/team/paps.webp";
+import carrimaImg from "../public/assets/team/carrima.webp";
 
 // Sponsors logo
 import espaco_uem from "../public/assets/sponsors/espaco_uem.png"
