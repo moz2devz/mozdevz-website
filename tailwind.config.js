@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/assets/hero.jpg')",
-        about: "url('/assets/mozdevz-about.jpg')",
+        hero: "url('/assets/hero.webp')",
+        about: "url('/assets/mozdevz-about.webp')",
         header: "url('/assets/about-cover.jpg')",
       },
-      colors: { 
+      colors: {
         primary: "hsla(358, 75%, 55%, 1);"
       }
     },
