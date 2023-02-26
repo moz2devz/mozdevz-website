@@ -1,6 +1,6 @@
 // Team members images
 import igorImg from "../public/assets/team/igor.png";
-import fenildeImg from "../public/assets/team/fenilde.png";
+import fenildeImg from "../public/assets/team/fenilde.webp";
 import odiliaImg from "../public/assets/team/odilia.png";
 import fredImg from "../public/assets/team/fred.png";
 import papsImg from "../public/assets/team/paps.jpg";
