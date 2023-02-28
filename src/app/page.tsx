@@ -1,7 +1,7 @@
 'use client' // this is a client component
 
 import Image from 'next/image'
-import { Desktop, Buildings, RocketLaunch } from 'phosphor-react'
+import { UsersThree, Buildings, RocketLaunch } from 'phosphor-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
@@ -110,7 +110,7 @@ export default function Home() {
           <RevealList interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
               <div className="p-5 rounded-full text-primary brightnessDownWhenHover">
-                <Desktop size={56} />
+                <UsersThree size={56} />
               </div>
               <div className="text-center">
                 <h3 className="text-xl text-gray-800">Talentos</h3>
