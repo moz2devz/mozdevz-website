@@ -151,26 +151,6 @@ export default function Home() {
           </RevealList>
         </Section>
 
-        {/* Join the community */}
-        <Section className='bg-[#fafbfd]'>
-          <div className="md:flex md:flex-col md:items-center">
-            <aside className="mb-6 md:mb-8 md:w-2/5">
-              <h2 className="text-[28px] md:text-2xl text-center">
-                Gostaria de participar dos nossos meetups e ser
-                membro da comunidade?
-              </h2>
-            </aside>
-            <RevealList interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
-              <a className="button !rounded-none" href="#">
-                Ser membro da Mozdevz
-              </a>
-              <a className="button !rounded-none" href="#">
-                Participar de um meetup
-              </a>
-            </RevealList>
-          </div>
-        </Section>
-
         <Section>
           <div className='text-center max-w-md mx-auto'>
             <h2 className="text-gray-900 text-3xl">Mozdevz Team</h2>
