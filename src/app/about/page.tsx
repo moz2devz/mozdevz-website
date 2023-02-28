@@ -43,7 +43,7 @@ export default function About() {
         </Section>
         <Wrapper className='py-16 md:py-32 px-10 md:px-32 bg-[#fafbfd]'>
           <div className='mb-10'>
-            <p className="mb-4">Nossa Identidade</p>
+            <p className="mb-4 font-bold">Nossa Identidade</p>
             <h2 className='text-2xl text-primary md:text-4xl md:font-semibold'>
               Comunidade. Tecnologia. Experiências
             </h2>
