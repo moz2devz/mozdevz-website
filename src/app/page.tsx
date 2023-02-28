@@ -153,7 +153,7 @@ export default function Home() {
 
         <Section>
           <div className='text-center max-w-md mx-auto'>
-            <h2 className="text-gray-900 text-3xl">Mozdevz Team</h2>
+            <h2 className="text-gray-900 text-3xl">MozDevz Team</h2>
             <p className="text-gray-600">
               A team responsavel por dirigir essa imensa comunidade de
               devz do Rovuma ao Maputo
