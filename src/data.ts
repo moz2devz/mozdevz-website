@@ -67,7 +67,7 @@ const team = [
     img: fenildeImg
   },
   {
-    name: "Henrique (Mister Paps)",
+    name: "Henrique Chigumane",
     role: "Gestor de Imagem",
     instagram: "#",
     twitter: "https://twitter.com/themisterpaps",
