@@ -25,7 +25,7 @@ export default function Contact() {
                   Fale connosco
                 </h2>
                 <p className="text-gray-600">
-                  Estamos sempre em busca de novos parceiros que possam se beneficiar de nossa expertise e colaborar conosco para desenvolver projetos incríveis juntos.
+                  Estamos sempre em busca de novos parceiros que possam se beneficiar de nossa expertise e colaborar connosco para desenvolver projectos incríveis juntos.
                 </p>
               </div>
               <form className="w-full flex flex-col gap-6">

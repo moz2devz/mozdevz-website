@@ -11,6 +11,7 @@ import Hero from '@/components/layouts/Hero'
 import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
 import Cases from '@/components/cards/Cases'
 import { RevealList } from 'next-reveal'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
               <p className="text-gray-600">
                 Proporcionamos oportunidades de partilha de conhecimento e
                 desenvolvimento de habilidades para a criação de produtos
-                digitais a jovens durante o period de formação e contribuímos
+                digitais a jovens durante o período de formação e contribuímos
                 para o desenvolvimento da sociedade atraves das soluções
                 desenvolvidas.
               </p>
@@ -83,6 +84,10 @@ export default function Home() {
               <p className="text-gray-600">
                 Somos uma comunidade de desenvolvedores moçambicanos de software e aplicações. Usamos os nossos talentos para contribuir para o desenvolvimento social da comunidade na qual estamos inseridos.
               </p>
+
+              <Link href='/about' className="text-primary font-bold">
+                Saiba mais
+              </Link>
 
               <a href="#" className="text-primary font-bold">
                 Saiba mais
@@ -115,8 +120,8 @@ export default function Home() {
               <div className="text-center">
                 <h3 className="text-xl text-gray-800">Talentos</h3>
                 <p className="mt-4">
-                  Capacitados e desenvolvemos talentos com o objective de
-                  preprarar e integrar no mercado de trabalho atraves da nossa rede de parceiros.
+                  Capacitamos e desenvolvemos talentos com o objectivo de
+                  preprarar e integrar no mercado de trabalho através da nossa rede de parceiros.
                 </p>
               </div>
             </div>
@@ -155,7 +160,7 @@ export default function Home() {
           <div className='text-center max-w-md mx-auto'>
             <h2 className="text-gray-900 text-3xl">MozDevz Team</h2>
             <p className="text-gray-600">
-              A team responsavel por dirigir essa imensa comunidade de
+              A team responsável por dirigir essa imensa comunidade de
               devz do Rovuma ao Maputo
             </p>
           </div>

@@ -23,7 +23,7 @@ export default function About() {
             <div className="md:flex md:space-x-10 md:gap-28">
               <div className="mb-8 md:w-2/5">
                 <h2 className="text-[24px] md:text-4xl mb-4 md:mb-8">
-                  Quem nós somos
+                  Quem somos nós
                 </h2>
                 <a className="text-primary font-bold" href='#'>
                   Conheça a nossa team
