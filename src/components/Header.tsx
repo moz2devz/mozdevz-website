@@ -40,7 +40,7 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-8">
             <Link href="/" className="text-2xl font-bold block">
               <Image
-                src={ scrollY > 200 ? logo : logoWhite }
+                src={scrollY > 200 ? logo : logoWhite}
                 width={130}
                 alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
               />
@@ -50,24 +50,24 @@ const Header: React.FC = () => {
           <div className="w-full flex gap-10 justify-end items-center">
             <nav>
               <ul className="flex items-center gap-5 text-sm">
-                { menuItems.map(menuItem => {
+                {menuItems.map(menuItem => {
                   return (
                     <li key={menuItem.href}>
                       <ActiveLink
-                        href={ menuItem.href }
+                        href={menuItem.href}
                         className="font-bold hover:text-red-500 transition-colors"
                         activeClassName="text-red-500"
                       >
-                        { menuItem.name }
+                        {menuItem.name}
                       </ActiveLink>
                     </li>
                   )
-                }) }
+                })}
               </ul>
             </nav>
             <a
               className="button text-sm"
-              href="#"
+              href="https://linktr.ee/mozdevz"
             >
               Juntar-se a comunidade
             </a>
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between lg:hidden">
           <Link href="/" className="text-2xl font-bold block">
             <Image
-              src={ scrollY > 200 ? logo : logoWhite }
+              src={scrollY > 200 ? logo : logoWhite}
               width={130}
               alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
             />
@@ -120,25 +120,25 @@ const Header: React.FC = () => {
 
               <nav className="block mt-28 mb-10">
                 <ul className="flex flex-col gap-5 font-thin">
-                  { menuItems.map(menuItem => {
+                  {menuItems.map(menuItem => {
                     return (
                       <li key={menuItem.href}>
                         <ActiveLink
-                          href={ menuItem.href }
+                          href={menuItem.href}
                           className="font-bold hover:text-red-500 transition-colors"
                           activeClassName="text-red-500"
                         >
-                          { menuItem.name }
+                          {menuItem.name}
                         </ActiveLink>
                       </li>
                     )
-                  }) }
+                  })}
                 </ul>
               </nav>
 
               <a
                 className="button !px-5 !text-sm"
-                href="#"
+                href="https://linktr.ee/mozdevz"
               >
                 Juntar-se a comunidade
               </a>
