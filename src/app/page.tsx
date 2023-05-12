@@ -88,10 +88,6 @@ export default function Home() {
               <Link href='/about' className="text-primary font-bold">
                 Saiba mais
               </Link>
-
-              <a href="#" className="text-primary font-bold">
-                Saiba mais
-              </a>
             </div>
 
             <div className="w-full md:w-auto flex flex-col md:flex-row items-center gap-10">
