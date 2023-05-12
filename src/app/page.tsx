@@ -11,6 +11,7 @@ import Hero from '@/components/layouts/Hero'
 import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
 import Cases from '@/components/cards/Cases'
 import { RevealList } from 'next-reveal'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -83,6 +84,10 @@ export default function Home() {
               <p className="text-gray-600">
                 Somos uma comunidade de desenvolvedores moçambicanos de software e aplicações. Usamos os nossos talentos para contribuir para o desenvolvimento social da comunidade na qual estamos inseridos.
               </p>
+
+              <Link href='/about' className="text-primary font-bold">
+                Saiba mais
+              </Link>
 
               <a href="#" className="text-primary font-bold">
                 Saiba mais
