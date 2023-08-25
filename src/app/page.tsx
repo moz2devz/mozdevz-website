@@ -2,8 +2,6 @@
 
 import Image from 'next/image'
 import { UsersThree, Buildings, RocketLaunch } from 'phosphor-react'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
 import Hero from '@/components/layouts/Hero'
@@ -15,8 +13,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <div className="min-h-screen">
       <Hero className="bg-hero">
         <h1 className="text-4xl md:text-5xl text-white break-words">
           A maior comunidade de desenvolvedores de Moçambique
@@ -195,7 +192,6 @@ export default function Home() {
           </RevealList>
         </Section>
       </main >
-      <Footer />
-    </>
+    </div>
   )
 }

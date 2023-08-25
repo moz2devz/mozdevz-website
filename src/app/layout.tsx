@@ -1,5 +1,7 @@
+import Header from '@/components/Header';
 import './globals.css'
 import { Hind, Raleway } from '@next/font/google';
+import Footer from '@/components/Footer';
 
 const hind = Hind({
   subsets: ['latin'],
@@ -21,7 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={`${hind.variable} ${raleway.variable} font-body`}>{children}</body>
+      <body className={`${hind.variable} ${raleway.variable} font-body`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

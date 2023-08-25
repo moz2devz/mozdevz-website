@@ -1,7 +1,5 @@
 'use client' // this is a client component
 
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import Wrapper from '@/components/layouts/Wrapper'
 import Hero from '@/components/layouts/Hero'
@@ -9,8 +7,7 @@ import Hero from '@/components/layouts/Hero'
 
 export default function About() {
   return (
-    <>
-      <Header />
+    <div className="min-h-screen">
       <Hero className="bg-header">
         <h1 className="text-4xl md:text-5xl text-white break-words">
           Impactamos milhares de devz e impulsionamos carreiras
@@ -98,9 +95,7 @@ export default function About() {
             </div>
           </div>
         </Section>
-
       </main>
-      <Footer />
-    </>
+    </div>
   )
 }

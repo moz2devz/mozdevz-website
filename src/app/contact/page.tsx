@@ -1,15 +1,12 @@
 'use client' // this is a client component
 
 import { NavigationArrow, DeviceMobile, EnvelopeSimple } from "phosphor-react"
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import Hero from '@/components/layouts/Hero'
 
 export default function Contact() {
   return (
-    <>
-      <Header />
+    <div className="min-h-screen">
       <Hero className="bg-header">
         <h1 className="text-4xl md:text-5xl text-white break-words">
           Sempre aqui para ter uma conversa
@@ -73,8 +70,6 @@ export default function Contact() {
           </div>
         </Section>
       </main>
-
-      <Footer />
-    </>
+    </div>
   )
 }
