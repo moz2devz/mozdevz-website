@@ -21,6 +21,13 @@ import kabumLogo from '../public/assets/sponsors/Kabum_logo.png'
 import standard_bankLogo from '../public/assets/sponsors/standard_bank.png'
 import vodacomLogo from '../public/assets/sponsors/Vodacom-Logo.wine.png'
 
+// Schools logos
+import isutcLogo from "../public/assets/schools/isutc.png";
+import lurioLogo from "../public/assets/schools/lurio.png";
+import nauticaLogo from "../public/assets/schools/nautica.png";
+import ujcLogo from "../public/assets/schools/ujc.png";
+import up_maputoLogo from "../public/assets/schools/up_maputo.png";
+
 // Cases Icons
 import { User, Student, Swap, Code } from 'phosphor-react'
 
@@ -168,4 +175,26 @@ const cases = [
   ],
 ]
 
-export { recognitions, team, sponsors, cases }
+const schools=[
+  {
+    name: 'ISUTC',
+    logo: isutcLogo,
+  },
+  {
+    name: 'UNILÚRIO',
+    logo: lurioLogo,
+  },
+  {
+    name: 'NAUTICA',
+    logo: nauticaLogo,
+  },
+  {
+    name: 'UJC',
+    logo: ujcLogo,
+  },
+  {
+    name: 'UP Maputo',
+    logo: up_maputoLogo,
+  }
+]
+export { recognitions, team, sponsors, cases, schools }
