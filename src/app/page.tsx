@@ -2,21 +2,18 @@
 
 import Image from 'next/image'
 import { UsersThree, Buildings, RocketLaunch } from 'phosphor-react'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
 import Hero from '@/components/layouts/Hero'
 
-import { recognitions, team, sponsors, cases as whyMozDevz } from '@/data'
+import { recognitions, team, sponsors, cases as whyMozDevz, schools } from '@/data'
 import Cases from '@/components/cards/Cases'
 import { RevealList } from 'next-reveal'
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <div className="min-h-screen">
       <Hero className="bg-hero">
         <h1 className="text-4xl md:text-5xl text-white break-words">
           A maior comunidade de desenvolvedores de Moçambique
@@ -194,8 +191,29 @@ export default function Home() {
             }
           </RevealList>
         </Section>
+
+        <Section className="bg-[#fafbfd]">
+          <div className='text-center max-w-md mx-auto'>
+            <h2 className="text-gray-900 text-3xl mb-2">
+            MozDevz Schools
+            </h2>
+            <p className="text-gray-600">
+            Universidades comprometidas com o sucesso e excelência dos alunos em ciências tecnológicas através da educação, inovação  que ajudam a encorajar o desenvolvimento da comunidade MozDevz            </p>
+          </div>
+
+          <RevealList interval={75} delay={500} className="mt-10 md:px-32 w-full flex flex-wrap gap-16 justify-center">
+            {
+              schools.map((school, index) => {
+                return (
+                  <div key={index} className="max-w-[100px]">
+                    <Image src={school.logo} alt={school.name} className="w-full" />
+                  </div>
+                )
+              })
+            }
+          </RevealList>
+        </Section>
       </main >
-      <Footer />
-    </>
+    </div>
   )
 }
