@@ -1,5 +1,5 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsdk": ".yarn/cache/typescript-patch-0887b19144-2160f7ad97.zip/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "css.lint.unknownAtRules": "ignore",
   "[css]": {
