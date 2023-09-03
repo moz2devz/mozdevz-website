@@ -183,7 +183,7 @@ export default function Home() {
             {
               sponsors.map((sponsor, index) => {
                 return (
-                  <div key={index} className="max-w-[100px]">
+                  <div key={index} className="max-w-[100px] flex justify-center items-center">
                     <Image src={sponsor.logo} alt={sponsor.name} className="w-full" />
                   </div>
                 )
