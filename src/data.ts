@@ -8,9 +8,9 @@ import melanieImg from '../public/assets/team/melanie.jpg'
 
 // Sponsors logo
 import espaco_uem from '../public/assets/sponsors/espaco_uem.png'
-import ciuemLogo from '../public/assets/sponsors/ciuem.png'
+import ciuemLogo from '../public/assets/sponsors/ciuem.webp'
 import coworklabLogo from '../public/assets/sponsors/coworklab.png'
-import banco_mundialLogo from '../public/assets/sponsors/banco_mundial.png'
+import banco_mundialLogo from '../public/assets/sponsors/world-bank-transformed.png'
 import mctestpLogo from '../public/assets/sponsors/mctestp.png'
 import oxfamLogo from '../public/assets/sponsors/oxfam.png'
 import psiLogo from '../public/assets/sponsors/psi.png'
@@ -19,7 +19,7 @@ import adeLogo from '../public/assets/sponsors/ADE.png'
 import fsdmocLogo from '../public/assets/sponsors/FSDMoc.png'
 import kabumLogo from '../public/assets/sponsors/Kabum_logo.png'
 import standard_bankLogo from '../public/assets/sponsors/standard_bank.png'
-import vodacomLogo from '../public/assets/sponsors/Vodacom-Logo.wine.png'
+import vodacomLogo from '../public/assets/sponsors/vodacom-logo.webp'
 
 // Schools logos
 import isutcLogo from "../public/assets/schools/isutc.png";
