@@ -19,6 +19,11 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@bradgarropy/next-google-analytics@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@bradgarropy/next-google-analytics/-/next-google-analytics-1.0.2.tgz#057b77d77f590939da4dce3575255b1f37411910"
+  integrity sha512-Xhli9NkdJbmvs1QNAcC9At3w/GIlXunVIMQzcAYfVP8tQSX3Q4un0doZfQknNvRz+QO6we+8lDE4/dMOio0vzQ==
+
 "@eslint/eslintrc@^1.4.1":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.4.1.tgz#af58772019a2d271b7e2d4c23ff4ddcba3ccfb3e"
