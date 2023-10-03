@@ -66,12 +66,13 @@ const Header: React.FC = () => {
                 })}
               </ul>
             </nav>
+            <select onChange={handleChange} className="bg-transparent cursor-pointer outline-none">
+              <option className='text-black'>Português</option>
+              <option className='text-black'>English</option>
+            </select>
             <a className="button text-sm" href="https://linktr.ee/mozdevz">
               {staticContent.headerSubtitle}
             </a>
-            <button className="button text-sm" onClick={handleChange}>
-              {staticContent.langChange}
-            </button>
           </div>
         </div>
 
@@ -144,9 +145,10 @@ const Header: React.FC = () => {
               >
                 {staticContent.headerSubtitle}
               </a>
-              <button className="button text-sm mt-4" onClick={handleChange}>
-                {staticContent.langChange}
-              </button>
+              <select onChange={handleChange} className="bg-transparent mt-7 outline-none mt">
+                <option>Português</option>
+                <option>English</option>
+              </select>
             </div>
           </div>
         </div>
