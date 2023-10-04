@@ -1,22 +1,21 @@
 'use client' // this is a client component
 
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { List, X } from 'phosphor-react'
 import Image from 'next/image'
-import logo from "../../public/assets/logo.png";
-import logoWhite from "../../public/assets/logo-white.png";
-import ActiveLink from './ActiveLink';
-import Link from 'next/link';
-
-const menuItems = [
-  { name: "Home", href: "/" },
-  { name: "Sobre", href: "/about" },
-  { name: "Contacto", href: "/contact" },
-]
+import logo from '../../public/assets/logo.png'
+import logoWhite from '../../public/assets/logo-white.png'
+import ActiveLink from './ActiveLink'
+import Link from 'next/link'
+import { LangContext } from '@/contexts/langContext'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
+  const {
+    lang: { menuItems, staticContent },
+    handleChange,
+  } = useContext(LangContext)
 
   useEffect(() => {
     document.querySelector('body')?.classList.remove('overflow-y-hidden')
@@ -27,12 +26,14 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`transition-colors duration-700 fixed z-50 right-0 left-0 top-0 ${scrollY > 200 ? 'text-black bg-white shadow' : 'bg-black/20 text-white'
-        }`}
+      className={`transition-colors duration-700 fixed z-50 right-0 left-0 top-0 ${
+        scrollY > 200 ? 'text-black bg-white shadow' : 'bg-black/20 text-white'
+      }`}
     >
       <div
-        className={`w-full bg-black/60 right-0 top-0 h-screen ${isMenuOpen ? 'absolute z-20 w-screen' : 'hidden w-0'
-          }`}
+        className={`w-full bg-black/60 right-0 top-0 h-screen ${
+          isMenuOpen ? 'absolute z-20 w-screen' : 'hidden w-0'
+        }`}
       ></div>
 
       <div className="max-w-7xl mx-auto p-5">
@@ -42,7 +43,7 @@ const Header: React.FC = () => {
               <Image
                 src={scrollY > 200 ? logo : logoWhite}
                 width={130}
-                alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
+                alt={staticContent.headerTitle}
               />
             </Link>
           </div>
@@ -50,7 +51,7 @@ const Header: React.FC = () => {
           <div className="w-full flex gap-10 justify-end items-center">
             <nav>
               <ul className="flex items-center gap-5 text-sm">
-                {menuItems.map(menuItem => {
+                {menuItems.map((menuItem) => {
                   return (
                     <li key={menuItem.href}>
                       <ActiveLink
@@ -65,11 +66,12 @@ const Header: React.FC = () => {
                 })}
               </ul>
             </nav>
-            <a
-              className="button text-sm"
-              href="https://linktr.ee/mozdevz"
-            >
-              Juntar-se a comunidade
+            <select onChange={handleChange} className="bg-transparent cursor-pointer outline-none">
+              <option className='text-black'>Português</option>
+              <option className='text-black'>English</option>
+            </select>
+            <a className="button text-sm" href="https://linktr.ee/mozdevz">
+              {staticContent.headerSubtitle}
             </a>
           </div>
         </div>
@@ -79,7 +81,7 @@ const Header: React.FC = () => {
             <Image
               src={scrollY > 200 ? logo : logoWhite}
               width={130}
-              alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
+              alt={staticContent.headerTitle}
             />
           </Link>
 
@@ -93,8 +95,9 @@ const Header: React.FC = () => {
           />
 
           <div
-            className={`absolute z-30 flex text-base right-0 top-0 transition-transform duration-700 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-              }`}
+            className={`absolute z-30 flex text-base right-0 top-0 transition-transform duration-700 ${
+              isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+            }`}
           >
             <div className="bg-white h-screen w-full max-w-xs min-w-[300px] p-8 text-black">
               <div className="flex gap-3 justify-between items-center">
@@ -102,7 +105,7 @@ const Header: React.FC = () => {
                   <Image
                     src={logo}
                     width={130}
-                    alt="Mozdevz - Comunidade Moçambicana de Desenvolvedores"
+                    alt={staticContent.headerTitle}
                   />
                 </Link>
 
@@ -120,7 +123,7 @@ const Header: React.FC = () => {
 
               <nav className="block mt-28 mb-10">
                 <ul className="flex flex-col gap-5 font-thin">
-                  {menuItems.map(menuItem => {
+                  {menuItems.map((menuItem) => {
                     return (
                       <li key={menuItem.href}>
                         <ActiveLink
@@ -140,8 +143,12 @@ const Header: React.FC = () => {
                 className="button !px-5 !text-sm"
                 href="https://linktr.ee/mozdevz"
               >
-                Juntar-se a comunidade
+                {staticContent.headerSubtitle}
               </a>
+              <select onChange={handleChange} className="bg-transparent mt-7 outline-none mt">
+                <option>Português</option>
+                <option>English</option>
+              </select>
             </div>
           </div>
         </div>
