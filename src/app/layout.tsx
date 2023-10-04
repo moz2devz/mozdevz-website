@@ -1,18 +1,19 @@
-import Header from '@/components/Header';
+import Header from '@/components/Header'
 import './globals.css'
-import { Hind, Raleway } from '@next/font/google';
-import Footer from '@/components/Footer';
-import GoogleAnalytics from '@bradgarropy/next-google-analytics';
+import { Hind, Raleway } from '@next/font/google'
+import Footer from '@/components/Footer'
+import GoogleAnalytics from '@bradgarropy/next-google-analytics'
+import { LangContextProvider } from '@/contexts/langContext'
 
 const hind = Hind({
   subsets: ['latin'],
-  weight: ["400"],
+  weight: ['400'],
   variable: '--font-hind',
 })
 
 const raleway = Raleway({
   subsets: ['latin'],
-  weight: ["600", "700"],
+  weight: ['600', '700'],
   variable: '--font-raleway',
 })
 
@@ -25,10 +26,12 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className={`${hind.variable} ${raleway.variable} font-body`}>
-        <Header />
-        {children}
+        <LangContextProvider>
+          <Header />
+          {children}
+        </LangContextProvider>
         <Footer />
-        <GoogleAnalytics measurementId='G-0CP265ZF2G'/>
+        <GoogleAnalytics measurementId="G-0CP265ZF2G" />
       </body>
     </html>
   )
