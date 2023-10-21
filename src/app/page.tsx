@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
         <p className="text-gray-100">{lang.staticContent.heroSubtitle}</p>
 
-        <a className="button block lg:hidden" href="#">
+        <a className="button block lg:hidden" href="https://linktr.ee/mozdevz">
           {lang.staticContent.heroInvitation}{' '}
         </a>
       </Hero>
