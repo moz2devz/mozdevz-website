@@ -62,13 +62,15 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section className="bg-[#fafbfd]">
+        <Section className="bg-[#f
+afbfd]">
           <RevealList
             interval={120}
             delay={500}
             className="flex flex-wrap items-center gap-14"
           >
-            <div className="max-w-md flex flex-col gap-5">
+            <div className="m
+ax-w-md flex flex-col gap-5">
               <h2 className="text-gray-900 text-3xl">
                 {lang.staticContent.revealTitle}
               </h2>
@@ -106,19 +108,19 @@ export default function Home() {
             className="flex flex-wrap items-center justify-center  gap-10"
           >
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="p-5 rounded-full text-primary brightnessDownWhenHover">
+              <div className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 p-5 rounded-full text-primary brightnessDownWhenHover">
                 <UsersThree size={56} />
               </div>
               <div className="text-center">
                 <h3 className="text-xl text-gray-800">
                   {lang.staticContent.talentsTitle}
                 </h3>
-                <p className="mt-4">{lang.staticContent.talentsSubtitle}</p>
+                <p className="mt-4 " >{lang.staticContent.talentsSubtitle}</p>
               </div>
             </div>
 
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="p-5 rounded-full text-primary brightnessDownWhenHover">
+              <div className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 p-5 rounded-full text-primary brightnessDownWhenHover">
                 <RocketLaunch size={56} />
               </div>
               <div className="text-center">
@@ -130,7 +132,7 @@ export default function Home() {
             </div>
 
             <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="p-5 rounded-full text-primary brightnessDownWhenHover">
+              <div className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 p-5 rounded-full text-primary brightnessDownWhenHover ">
                 <Buildings size={56} />
               </div>
               <div className="text-center">
@@ -148,7 +150,7 @@ export default function Home() {
             <h2 className="text-gray-900 text-3xl">
               {lang.staticContent.teamTitle}
             </h2>
-            <p className="text-gray-600">{lang.staticContent.teamSubtitle}</p>
+            <p className="text-gray-600 text-justify hover:text-center">{lang.staticContent.teamSubtitle}</p>
           </div>
 
           <RevealList
