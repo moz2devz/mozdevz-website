@@ -26,7 +26,7 @@ import isutcLogo from '../../public/assets/schools/isuteclogomode2.png'
 import lurioLogo from '../../public/assets/schools/lurio.png'
 import nauticaLogo from '../../public/assets/schools/nautica.png'
 import ujcLogo from '../../public/assets/schools/ujc.png'
-import up_maputoLogo from '../../public/assets/schools/up_maputoalt.png'
+import up_maputoLogo from '../../public/assets/schools/upmaputomode.png'
 
 // Cases Icons
 import { User, Student, Swap, Code } from 'phosphor-react'
