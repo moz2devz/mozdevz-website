@@ -28,9 +28,9 @@ h6 {
 }
 
 .button {
-  @apply brightnessDownWhenHover py-3 px-10 rounded bg-primary font-medium text-white uppercase max-w-max
+  @apply revertWhenHover py-3 px-10 rounded-full bg-primary font-medium text-white uppercase max-w-max
 }
 
-.brightnessDownWhenHover {
+.revertWhenHover {
   @apply hover:brightness-75 duration-500 transition-all
 }
