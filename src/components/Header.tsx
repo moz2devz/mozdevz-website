@@ -3,8 +3,8 @@
 import { useContext, useEffect, useState } from 'react'
 import { List, X } from 'phosphor-react'
 import Image from 'next/image'
-import logo from '../../public/assets/logo.png'
-import logoWhite from '../../public/assets/logo-white.png'
+import logo from '../../public/assets/blackLogoTrans.png'
+import logoWhite from '../../public/assets/WhiteLogoTrans.png'
 import ActiveLink from './ActiveLink'
 import Link from 'next/link'
 import { LangContext } from '@/contexts/langContext'
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             <Link href="/" className="text-2xl font-bold block">
               <Image
                 src={scrollY > 200 ? logo : logoWhite}
-                width={130}
+                width={180}
                 alt={staticContent.headerTitle}
               />
             </Link>
@@ -79,7 +79,7 @@ const Header: React.FC = () => {
           <Link href="/" className="text-2xl font-bold block">
             <Image
               src={scrollY > 200 ? logo : logoWhite}
-              width={130}
+              width={180}
               alt={staticContent.headerTitle}
             />
           </Link>
