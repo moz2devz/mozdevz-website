@@ -25,7 +25,7 @@ const LangSelector: FC<SelectedLangProps> = ({ className, ...props }) => {
 
     return (
 
-        <button className={`${className} text-white border border-primary bg-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center `} onClick={() => { handleChange(); handleState() }}>
+        <button className={`${className} `} onClick={() => { handleChange(); handleState() }}>
             {isPortuguese ? "EN" : "PT"}
         </button>
     )
