@@ -70,7 +70,7 @@ const Header: React.FC = () => {
             <a className="button text-sm" href="https://linktr.ee/mozdevz">
               {staticContent.headerSubtitle}
             </a>
-            <LangSelector className='rounded-full text-sm' />
+            <LangSelector className=' text-sm' />
           </div>
         </div>
 

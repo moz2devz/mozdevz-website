@@ -10,7 +10,7 @@ const LangSelector: FC<SelectedLangProps> = ({ className, ...props }) => {
      * 
      * selectedLanguage={selectedLanguage}
      */
-    const [selectedLanguage, setSelectedLanguage] = useState("PT")
+    const [isPortuguese, setIsPortugues] = useState(true)
     const {
         lang: { menuItems, staticContent },
         handleChange,
@@ -19,19 +19,15 @@ const LangSelector: FC<SelectedLangProps> = ({ className, ...props }) => {
     const handleState = () => {
 
 
-        if (selectedLanguage === "PT") {
-            setSelectedLanguage("EN")
-        }
-        else {
-            setSelectedLanguage("PT")
-        }
+        setIsPortugues(!isPortuguese)
     }
 
 
     return (
-        <a className={`${className} button`} onClick={() => { handleChange(); handleState() }}>
-            {selectedLanguage}
-        </a>
+
+        <button className={`${className} text-white border border-primary bg-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center `} onClick={() => { handleChange(); handleState() }}>
+            {isPortuguese ? "EN" : "PT"}
+        </button>
     )
 }
 
