@@ -7,7 +7,7 @@ import {
   YoutubeLogo,
 } from 'phosphor-react'
 
-import logo from '../../public/assets/logo-white.png'
+import logo from '../../public/assets/WhiteLogoTrans.png'
 import Link from 'next/link'
 import Image from 'next/image'
 
