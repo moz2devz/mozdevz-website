@@ -62,15 +62,19 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section className="bg-[#f
-afbfd]">
+        <Section
+          className="bg-[#f
+afbfd]"
+        >
           <RevealList
             interval={120}
             delay={500}
             className="flex flex-wrap items-center gap-14"
           >
-            <div className="m
-ax-w-md flex flex-col gap-5">
+            <div
+              className="m
+ax-w-md flex flex-col gap-5"
+            >
               <h2 className="text-gray-900 text-3xl">
                 {lang.staticContent.revealTitle}
               </h2>
@@ -115,7 +119,7 @@ ax-w-md flex flex-col gap-5">
                 <h3 className="text-xl text-gray-800">
                   {lang.staticContent.talentsTitle}
                 </h3>
-                <p className="mt-4 " >{lang.staticContent.talentsSubtitle}</p>
+                <p className="mt-4 ">{lang.staticContent.talentsSubtitle}</p>
               </div>
             </div>
 
@@ -150,7 +154,9 @@ ax-w-md flex flex-col gap-5">
             <h2 className="text-gray-900 text-3xl">
               {lang.staticContent.teamTitle}
             </h2>
-            <p className="text-gray-600 text-justify hover:text-center">{lang.staticContent.teamSubtitle}</p>
+            <p className="text-gray-600 text-justify hover:text-center">
+              {lang.staticContent.teamSubtitle}
+            </p>
           </div>
 
           <RevealList

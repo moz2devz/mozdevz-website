@@ -15,8 +15,8 @@ const TeamMember: React.FC<TeamMemberProps> = (props) => {
   return (
     <div className="w-full max-w-[500px] sm:max-w-[300px]">
       <div className="relative group mb-5">
-        <div>
-          <Image src={props.img} alt={props.name} className="w-full" />
+        <div className="overflow-hidden rounded-md origin-center">
+          <Image src={props.img} alt={props.name} className="w-full hover:scale-125 transition-all ease-in-out duration-700" />
         </div>
         <div className="bg-primary py-5 absolute bottom-0 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-700">
           <div className="flex gap-10 justify-center translate-y-10 group-hover:translate-y-0 transition-transform duration-[750ms]">
