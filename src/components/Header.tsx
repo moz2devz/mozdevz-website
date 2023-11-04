@@ -26,6 +26,7 @@ const Header: React.FC = () => {
     })
   }, [])
 
+
   return (
     <header
       className={`transition-colors duration-700 fixed z-50 right-0 left-0 top-0 ${scrollY > 200 ? 'text-black bg-white shadow' : 'bg-black/20 text-white'
@@ -50,7 +51,7 @@ const Header: React.FC = () => {
               />
             </Link>
           </div>
-
+          {/**Menu Items */}
           <div className="w-full flex justify-center items-center">
             <nav>
               <ul className="flex items-center gap-5 text-sm">
