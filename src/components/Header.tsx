@@ -37,8 +37,11 @@ const Header: React.FC = () => {
       ></div>
 
       <div className="max-w-7xl mx-auto p-5">
-        <div className="hidden items-center justify-between lg:flex">
-          <div className="flex items-center gap-8">
+        {/*Div da nav para large */}
+
+        <div className="hidden items-center justify-around lg:flex">
+          {/**LOGO */}
+          <div className=" basis-1/5 flex items-center gap-8">
             <Link href="/" className="text-2xl font-bold block">
               <Image
                 src={scrollY > 200 ? logo : logoWhite}
@@ -48,7 +51,7 @@ const Header: React.FC = () => {
             </Link>
           </div>
 
-          <div className="w-full flex gap-10 justify-end items-center">
+          <div className="w-full flex justify-center items-center">
             <nav>
               <ul className="flex items-center gap-5 text-sm">
                 {menuItems.map((menuItem) => {
@@ -66,6 +69,9 @@ const Header: React.FC = () => {
                 })}
               </ul>
             </nav>
+          </div>
+
+          <div className=' basis-2/5 flex justify-end gap-x-4'>
 
             <a className="button text-sm" href="https://linktr.ee/mozdevz">
               {staticContent.headerSubtitle}
@@ -73,6 +79,8 @@ const Header: React.FC = () => {
             <LangSelector className=' text-sm' />
           </div>
         </div>
+
+        {/**inicio mobile navBar  */}
 
         <div className="flex justify-between lg:hidden">
 
