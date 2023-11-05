@@ -64,6 +64,14 @@ const schoolsLogos = {
   up_maputo: up_maputoLogo,
 }
 
+const socialMediaLinks = {
+  twitter: 'https://twitter.com/i/flow/login?redirect_after_login=%2Fmozdevz',
+  facebook: 'https://www.facebook.com/mozdevz',
+  instagram: 'https://www.instagram.com/mozdevz/',
+  linkdin: 'https://www.linkedin.com/company/mozdevz/',
+  youtube: 'https://www.youtube.com/@mozdevz6592',
+}
+
 const icons = {
   User,
   Student,
@@ -71,9 +79,4 @@ const icons = {
   Code,
 }
 
-export {
-  teamMembers,
-  sponsorsLogos,
-  schoolsLogos,
-  icons,
-}
+export { teamMembers, sponsorsLogos, schoolsLogos, icons, socialMediaLinks }
