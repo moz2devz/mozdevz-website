@@ -8,16 +8,12 @@ import logoWhite from '../../public/assets/WhiteLogoTrans.png'
 import ActiveLink from './ActiveLink'
 import Link from 'next/link'
 import { LangContext } from '@/contexts/langContext'
-import LangSelector from './LangSelector'
-
+import * as pt from '@/data/pt'
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
 
-  const {
-    lang: { menuItems, staticContent },
-    handleChange,
-  } = useContext(LangContext)
+  const { lang, handleChange } = useContext(LangContext)
 
   useEffect(() => {
     document.querySelector('body')?.classList.remove('overflow-y-hidden')
@@ -26,15 +22,16 @@ const Header: React.FC = () => {
     })
   }, [])
 
-
   return (
     <header
-      className={`transition-colors duration-700 fixed z-50 right-0 left-0 top-0 ${scrollY > 200 ? 'text-black bg-white shadow' : 'bg-black/20 text-white'
-        }`}
+      className={`transition-colors duration-700 fixed z-50 right-0 left-0 top-0 ${
+        scrollY > 200 ? 'text-black bg-white shadow' : 'bg-black/20 text-white'
+      }`}
     >
       <div
-        className={`w-full bg-black/60 right-0 top-0 h-screen ${isMenuOpen ? 'absolute z-20 w-screen' : 'hidden w-0'
-          }`}
+        className={`w-full bg-black/60 right-0 top-0 h-screen ${
+          isMenuOpen ? 'absolute z-20 w-screen' : 'hidden w-0'
+        }`}
       ></div>
 
       <div className="max-w-7xl mx-auto p-5">
@@ -47,7 +44,7 @@ const Header: React.FC = () => {
               <Image
                 src={scrollY > 200 ? logo : logoWhite}
                 width={180}
-                alt={staticContent.headerTitle}
+                alt={lang.staticContent.headerTitle}
               />
             </Link>
           </div>
@@ -55,7 +52,7 @@ const Header: React.FC = () => {
           <div className="w-full flex justify-center items-center">
             <nav>
               <ul className="flex items-center gap-5 text-sm">
-                {menuItems.map((menuItem) => {
+                {lang.menuItems.map((menuItem) => {
                   return (
                     <li key={menuItem.href}>
                       <ActiveLink
@@ -72,24 +69,26 @@ const Header: React.FC = () => {
             </nav>
           </div>
 
-          <div className=' basis-2/5 flex justify-end gap-x-4'>
-
+          <div className=" basis-2/5 flex justify-end gap-x-4">
             <a className="button text-sm" href="https://linktr.ee/mozdevz">
-              {staticContent.headerSubtitle}
+              {lang.staticContent.headerSubtitle}
             </a>
-            <LangSelector className=' text-sm  text-white border border-primary bg-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-full text-sm  text-center inline-flex items-center w-10 h-10 flex items-center justify-center' />
+            <button
+              onClick={handleChange}
+              className="text-white border lang relative border-primary bg-primary hover:text-white focus:outline-none font-medium rounded-full text-sm  text-center inline-flex w-10 h-10 items-center justify-center"
+            >
+              {lang === pt ? 'EN' : 'PT'}
+            </button>
           </div>
         </div>
-
         {/**inicio mobile navBar  */}
 
         <div className="flex justify-between lg:hidden">
-
           <Link href="/" className="text-2xl font-bold block">
             <Image
               src={scrollY > 200 ? logo : logoWhite}
               width={180}
-              alt={staticContent.headerTitle}
+              alt={lang.staticContent.headerTitle}
             />
           </Link>
 
@@ -103,8 +102,9 @@ const Header: React.FC = () => {
           />
 
           <div
-            className={`absolute z-30 flex text-base right-0 top-0 transition-transform duration-700 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-              }`}
+            className={`absolute z-30 flex text-base right-0 top-0 transition-transform duration-700 ${
+              isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+            }`}
           >
             <div className="bg-white h-screen w-full max-w-xs min-w-[300px] p-8 text-black">
               <div className="flex gap-3 justify-between items-center">
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
                   <Image
                     src={logo}
                     width={130}
-                    alt={staticContent.headerTitle}
+                    alt={lang.staticContent.headerTitle}
                   />
                 </Link>
 
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
 
               <nav className="block mt-28 mb-10">
                 <ul className="flex flex-col gap-5 font-thin">
-                  {menuItems.map((menuItem) => {
+                  {lang.menuItems.map((menuItem) => {
                     return (
                       <li key={menuItem.href}>
                         <ActiveLink
@@ -150,12 +150,15 @@ const Header: React.FC = () => {
                 className="button !px-5 !text-sm"
                 href="https://linktr.ee/mozdevz"
               >
-                {staticContent.headerSubtitle}
+                {lang.staticContent.headerSubtitle}
               </a>
-              <select onChange={handleChange} className="bg-transparent mt-7 outline-none mt">
-                <option>Português</option>
-                <option>English</option>
-              </select>
+
+              <button
+                onClick={handleChange}
+                className="text-white border lang relative border-primary bg-primary hover:text-white focus:outline-none font-medium rounded-full text-sm  text-center flex mt-6 w-10 h-10 items-center justify-center"
+              >
+                {lang === pt ? 'EN' : 'PT'}
+              </button>
             </div>
           </div>
         </div>
