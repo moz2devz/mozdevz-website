@@ -22,11 +22,11 @@ import standard_bankLogo from '../../public/assets/sponsors/standard_bank.png'
 import vodacomLogo from '../../public/assets/sponsors/vodacom-logo.webp'
 
 // Schools logos
-import isutcLogo from '../../public/assets/schools/isutc.png'
+import isutcLogo from '../../public/assets/schools/isuteclogomode2.png'
 import lurioLogo from '../../public/assets/schools/lurio.png'
 import nauticaLogo from '../../public/assets/schools/nautica.png'
 import ujcLogo from '../../public/assets/schools/ujc.png'
-import up_maputoLogo from '../../public/assets/schools/up_maputo.png'
+import up_maputoLogo from '../../public/assets/schools/upmaputomode.png'
 
 // Cases Icons
 import { User, Student, Swap, Code } from 'phosphor-react'
@@ -64,6 +64,14 @@ const schoolsLogos = {
   up_maputo: up_maputoLogo,
 }
 
+const socialMediaLinks = {
+  twitter: 'https://twitter.com/i/flow/login?redirect_after_login=%2Fmozdevz',
+  facebook: 'https://www.facebook.com/mozdevz',
+  instagram: 'https://www.instagram.com/mozdevz/',
+  linkdin: 'https://www.linkedin.com/company/mozdevz/',
+  youtube: 'https://www.youtube.com/@mozdevz6592',
+}
+
 const icons = {
   User,
   Student,
@@ -71,9 +79,4 @@ const icons = {
   Code,
 }
 
-export {
-  teamMembers,
-  sponsorsLogos,
-  schoolsLogos,
-  icons,
-}
+export { teamMembers, sponsorsLogos, schoolsLogos, icons, socialMediaLinks }

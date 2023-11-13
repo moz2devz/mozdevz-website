@@ -28,9 +28,24 @@ h6 {
 }
 
 .button {
-  @apply brightnessDownWhenHover py-3 px-10 rounded bg-primary font-medium text-white uppercase max-w-max
+  @apply revertWhenHover py-3 px-10 rounded-full bg-primary font-medium text-white uppercase max-w-max
 }
 
-.brightnessDownWhenHover {
+.revertWhenHover {
   @apply hover:brightness-75 duration-500 transition-all
+}
+.lang:hover{
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+  animation: pulse 0.8s infinite;
+}
+@keyframes pulse {
+  0%{
+      box-shadow: 0 0 0 0 rgba(181, 59, 59, 1);
+  }
+  70%{
+      box-shadow: 0 0 0 20px rgba(181, 59, 59, 0);
+  }
+  100%{
+      box-shadow: 0 0 0 0 rgba(181, 59, 59, 0);
+  }
 }
