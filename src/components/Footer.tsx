@@ -10,6 +10,7 @@ import {
 import logo from '../../public/assets/WhiteLogoTrans.png'
 import Link from 'next/link'
 import Image from 'next/image'
+import { socialMediaLinks } from '@/data/data'
 
 const Footer: React.FC = () => {
   return (
@@ -18,29 +19,21 @@ const Footer: React.FC = () => {
         <Image src={logo} width={230} alt={''} />
       </Link>
       <div className="flex gap-4 justify-center items-center transition-all duration-700">
-        <Link href={'https://www.facebook.com/mozdevz'} target="_blank">
+        <Link href={socialMediaLinks.facebook} target="_blank">
           <FacebookLogo color="#fff" size={32} />
         </Link>
 
-        <Link
-          href={
-            'https://twitter.com/i/flow/login?redirect_after_login=%2Fmozdevz'
-          }
-          target="_blank"
-        >
+        <Link href={socialMediaLinks.twitter} target="_blank">
           <TwitterLogo size={32} color="#fff" />
         </Link>
 
-        <Link href={'https://www.instagram.com/mozdevz/'} target="_blank">
+        <Link href={socialMediaLinks.instagram} target="_blank">
           <InstagramLogo size={32} color="#fff" />
         </Link>
-        <Link
-          href={'https://www.linkedin.com/company/mozdevz/'}
-          target="_blank"
-        >
+        <Link href={socialMediaLinks.linkdin} target="_blank">
           <LinkedinLogo size={32} color="#fff" />
         </Link>
-        <Link href={'https://www.youtube.com/@mozdevz6592'} target="_blank">
+        <Link href={socialMediaLinks.youtube} target="_blank">
           <YoutubeLogo size={32} color="#fff" />
         </Link>
       </div>
