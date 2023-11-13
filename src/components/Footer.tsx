@@ -5,6 +5,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   YoutubeLogo,
+  IconContext,
 } from 'phosphor-react'
 
 import logo from '../../public/assets/WhiteLogoTrans.png'
@@ -19,23 +20,32 @@ const Footer: React.FC = () => {
         <Image src={logo} width={230} alt={''} />
       </Link>
       <div className="flex gap-4 justify-center items-center transition-all duration-700">
-        <Link href={socialMediaLinks.facebook} target="_blank">
-          <FacebookLogo color="#fff" size={32} />
-        </Link>
+        <IconContext.Provider
+          value={{
+            color: '#fff',
+            size: 32,
+            weight: 'duotone',
+            mirrored: false,
+          }}
+        >
+          <Link href={socialMediaLinks.facebook} target="_blank">
+            <FacebookLogo />
+          </Link>
 
-        <Link href={socialMediaLinks.twitter} target="_blank">
-          <TwitterLogo size={32} color="#fff" />
-        </Link>
+          <Link href={socialMediaLinks.twitter} target="_blank">
+            <TwitterLogo />
+          </Link>
 
-        <Link href={socialMediaLinks.instagram} target="_blank">
-          <InstagramLogo size={32} color="#fff" />
-        </Link>
-        <Link href={socialMediaLinks.linkdin} target="_blank">
-          <LinkedinLogo size={32} color="#fff" />
-        </Link>
-        <Link href={socialMediaLinks.youtube} target="_blank">
-          <YoutubeLogo size={32} color="#fff" />
-        </Link>
+          <Link href={socialMediaLinks.instagram} target="_blank">
+            <InstagramLogo />
+          </Link>
+          <Link href={socialMediaLinks.linkdin} target="_blank">
+            <LinkedinLogo />
+          </Link>
+          <Link href={socialMediaLinks.youtube} target="_blank">
+            <YoutubeLogo />
+          </Link>
+        </IconContext.Provider>
       </div>
       <p className="text-slate-400 text-base leading-relaxed text-center">
         ©2023 Mozdevz Community. <br />
