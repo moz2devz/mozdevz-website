@@ -49,7 +49,7 @@ const Header: React.FC = () => {
             </Link>
           </div>
           {/**Menu Items */}
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full flex justify-end pr-4 items-center">
             <nav>
               <ul className="flex items-center gap-5 text-sm">
                 {lang.menuItems.map((menuItem) => {
