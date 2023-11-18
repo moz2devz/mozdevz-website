@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
 import './globals.css'
-import { Hind, Raleway } from '@next/font/google'
+import { Hind, Raleway } from "next/font/google"
 import Footer from '@/components/Footer'
 import GoogleAnalytics from '@bradgarropy/next-google-analytics'
 import { LangContextProvider } from '@/contexts/langContext'
