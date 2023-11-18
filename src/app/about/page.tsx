@@ -60,7 +60,7 @@ export default function About() {
             </div>
             <div className="mb-4">
               <h3 className="mb-2">{staticContent.valuesTitle}</h3>
-              <p className="font-light">{staticContent.visionSubtitle}</p>
+              <p className="font-light">{staticContent.valuesSubtitle}</p>
             </div>
           </div>
         </Wrapper>
