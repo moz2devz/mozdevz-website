@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Calendar, MapPin } from 'phosphor-react'
+import { Calendar, Link, MapPin } from 'phosphor-react'
 import React from 'react'
 
 const Event = () => {
@@ -13,10 +13,12 @@ const Event = () => {
           className="rounded-2xl object-cover"
         />
       </div>
-      <span className="inline-block bg-slate-300 rounded-xl text-sm px-2 py-1 text-gray-600">
-        MOZDEVZ EVENT
-      </span>
-      <h3>CyberSecurity Awareness</h3>
+      <div className="bg-slate-300 flex justify-center items-center max-w-fit rounded-full text-sm px-2 py-1 text-gray-600">
+       <span className='relative top-[1px]'>
+         CyberSecurity
+        </span>
+      </div>
+      <h3>MozCyber Connect</h3>
       <div>
         <div className="flex items-center gap-2 text-gray-600">
           <Calendar size={20} />
@@ -24,7 +26,11 @@ const Event = () => {
         </div>
         <div className="flex items-center gap-2 text-gray-600">
           <MapPin size={20} />
-          <p>Sat, Jan 4 at 9:00 AM - 10:00 AM</p>
+          <p>Online</p>
+        </div>
+        <div className="flex items-center gap-2 text-gray-600">
+          <Link size={20} />
+          <a href="http://">Ver Mais</a>
         </div>
       </div>
     </div>
