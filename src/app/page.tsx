@@ -1,6 +1,12 @@
 'use client' // this is a client component
 import Image from 'next/image'
-import { UsersThree, Buildings, RocketLaunch } from 'phosphor-react'
+import {
+  UsersThree,
+  Buildings,
+  RocketLaunch,
+  ArrowULeftDown,
+  CaretDoubleRight,
+} from 'phosphor-react'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
 import Hero from '@/components/layouts/Hero'
@@ -9,6 +15,7 @@ import { RevealList } from 'next-reveal'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { LangContext } from '@/contexts/langContext'
+import Event from '@/components/cards/Event'
 
 export default function Home() {
   const { lang } = useContext(LangContext)
@@ -26,6 +33,25 @@ export default function Home() {
       </Hero>
 
       <main>
+        <Section>
+          <div className="flex flex-col md:flex-row justify-between md:items-center">
+            <p className="flex items-center text-2xl font-bold">
+              Happening in{' '}
+              <span className="ml-2 text-primary items-center flex underline">
+                <ArrowULeftDown size={22} className="mr-1" />
+                MOZDEVZ
+              </span>
+            </p>
+            <p className='text-gray-600 text-lg flex items-center gap-2'>
+              View All <CaretDoubleRight className='relative bottom-0.5' size={15} />
+            </p>
+          </div>
+          <RevealList delay={500} interval={120} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+            <Event />
+            <Event />
+            <Event />
+          </RevealList>
+        </Section>
         <Section>
           <div className="flex flex-wrap gap-10 items-center justify-between">
             <div className="flex flex-wrap justify-center gap-8">
