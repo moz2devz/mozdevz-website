@@ -29,7 +29,7 @@ const Event = ({
             className="rounded-2xl object-cover"
           />
         </NextLink>
-      </div>
+      </div> 
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <div
