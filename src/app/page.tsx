@@ -1,6 +1,12 @@
 'use client' // this is a client component
 import Image from 'next/image'
-import { UsersThree, Buildings, RocketLaunch } from 'phosphor-react'
+import {
+  UsersThree,
+  Buildings,
+  RocketLaunch,
+  ArrowULeftDown,
+  CaretDoubleRight,
+} from 'phosphor-react'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
 import Hero from '@/components/layouts/Hero'
@@ -9,6 +15,7 @@ import { RevealList } from 'next-reveal'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { LangContext } from '@/contexts/langContext'
+import Event from '@/components/cards/Event'
 
 export default function Home() {
   const { lang } = useContext(LangContext)
@@ -26,6 +33,65 @@ export default function Home() {
       </Hero>
 
       <main>
+        <Section>
+          <div className="flex flex-col md:flex-row justify-between md:items-center">
+            <p className="flex items-center text-2xl font-bold">
+              Acompanhe na {' '}
+              <span className="ml-2 text-primary items-center flex">
+                <ArrowULeftDown size={22} className="mr-1" />
+                MOZDEVZ
+              </span>
+            </p>
+            {/* <p className="text-gray-600 text-lg flex items-center gap-2">
+              View All{' '}
+              <CaretDoubleRight className="relative bottom-0.5" size={15} />
+            </p> */}
+          </div>
+          <RevealList
+            delay={500}
+            interval={120}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10"
+          >
+            
+            {[
+              
+              {
+                image: 'event-data-wave-24-66782b3fb5090.webp',
+                title: 'Data Wave: Conferência de Dados e IA',
+                tags: [
+                  { color: '#E9D5FF', title: 'Data' },
+                  { color: '#CBD5E1', title: 'IA' },
+                ],
+                date: '14 de Setemnbro 2024',
+                location: 'Por Anunciar',
+                link: 'https://datawave.mozdevz.org/',
+              },
+              {
+                image: 'khodar-2-1-66782618374c4.webp',
+                title: 'Khodar (Seasson 2)',
+                tags: [
+                  { color: '#CCFBF1', title: 'Development' },
+                ],
+                date: '08 de Julho 2024',
+                location: 'Online',
+                link: 'https://www.instagram.com/mozdevz/',
+              },
+              {
+                image: 'cyberconnect-66781ddab3235.webp',
+                title: 'MozCybe Connect',
+                tags: [
+                  { color: '#FEF3C7', title: 'Cybersecurity' },
+                ],
+                date: '04 de Maio - 01 de Junho 2024',
+                location: 'Online',
+                link: 'https://www.youtube.com/watch?v=TgXbZ-DZCy8&list=PLgx8AvFCHjcswvCZyDV4HJ3ckerA1N18B',
+              }
+              
+            ].map((item, index) => {
+              return <Event key={index} {...item} />
+            })}
+          </RevealList>
+        </Section>
         <Section>
           <div className="flex flex-wrap gap-10 items-center justify-between">
             <div className="flex flex-wrap justify-center gap-8">
