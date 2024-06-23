@@ -37,19 +37,36 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between md:items-center">
             <p className="flex items-center text-2xl font-bold">
               Happening in{' '}
-              <span className="ml-2 text-primary items-center flex underline">
+              <span className="ml-2 text-primary items-center flex">
                 <ArrowULeftDown size={22} className="mr-1" />
                 MOZDEVZ
               </span>
             </p>
-            <p className='text-gray-600 text-lg flex items-center gap-2'>
-              View All <CaretDoubleRight className='relative bottom-0.5' size={15} />
+            <p className="text-gray-600 text-lg flex items-center gap-2">
+              View All{' '}
+              <CaretDoubleRight className="relative bottom-0.5" size={15} />
             </p>
           </div>
-          <RevealList delay={500} interval={120} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-            <Event />
-            <Event />
-            <Event />
+          <RevealList
+            delay={500}
+            interval={120}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10"
+          >
+            {[
+              {
+                image: 'cyberconnect.png',
+                title: 'CyberConnect 2022',
+                tags: [
+                  { color: '#b2b2b2', title: 'CyberConnect' },
+                  { color: '#4ff312', title: 'Cybersecurity' },
+                ],
+                date: 'Sat Feb 28, 2022',
+                location: 'Online',
+                link: '#',
+              },
+            ].map((item, index) => {
+              return <Event key={index} {...item} />
+            })}
           </RevealList>
         </Section>
         <Section>
