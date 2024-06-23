@@ -21,12 +21,14 @@ const Event = ({
   return (
     <div className="bg-[#f2f3f5] p-3 rounded-2xl space-y-3">
       <div className="relative rounded-2xl h-40">
-        <Image
-          src={`/assets/events/${image}`}
-          alt="event"
-          fill
-          className="rounded-2xl object-cover"
-        />
+        <NextLink href={link}>
+          <Image
+            src={`/assets/events/${image}`}
+            alt="event"
+            fill
+            className="rounded-2xl object-cover"
+          />
+        </NextLink>
       </div>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
@@ -51,7 +53,9 @@ const Event = ({
         </div>
         <div className="flex items-center gap-2 text-gray-600">
           <Link size={20} />
-          <NextLink href={link} className='underline'>Ver Mais</NextLink>
+          <NextLink href={link} className="underline">
+            Ver Mais
+          </NextLink>
         </div>
       </div>
     </div>
