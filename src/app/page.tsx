@@ -78,7 +78,7 @@ export default function Home() {
               },
               {
                 image: 'cyberconnect-66781ddab3235.webp',
-                title: 'MozCybe Connect',
+                title: 'MozCyber Connect',
                 tags: [
                   { color: '#FEF3C7', title: 'Cybersecurity' },
                 ],
