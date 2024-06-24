@@ -5,7 +5,6 @@ import {
   Buildings,
   RocketLaunch,
   ArrowULeftDown,
-  CaretDoubleRight,
 } from 'phosphor-react'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
@@ -36,22 +35,20 @@ export default function Home() {
         <Section>
           <div className="flex flex-col md:flex-row justify-between md:items-center">
             <p className="flex items-center text-2xl font-bold">
-              Acompanhe na {' '}
+              {lang.staticContent.followOn} {' '}
               <span className="ml-2 text-primary items-center flex">
                 <ArrowULeftDown size={22} className="mr-1" />
                 MOZDEVZ
               </span>
             </p>
-            {/* <p className="text-gray-600 text-lg flex items-center gap-2">
-              View All{' '}
-              <CaretDoubleRight className="relative bottom-0.5" size={15} />
-            </p> */}
           </div>
           <RevealList
             delay={500}
             interval={120}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10"
           >
+
+            {lang.events.map((item, index) => {
             
             {[
               

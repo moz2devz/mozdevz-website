@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { Calendar, Link, MapPin } from 'phosphor-react'
 import NextLink from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
+import { LangContext } from '@/contexts/langContext'
 
 const Event = ({
   image,
@@ -18,6 +19,7 @@ const Event = ({
   location: string
   link: string
 }) => {
+  const { lang } = useContext(LangContext)
   return (
     <div className="bg-[#f2f3f5] p-3 rounded-2xl space-y-3">
       <div className="relative rounded-2xl h-40">
@@ -54,7 +56,7 @@ const Event = ({
         <div className="flex items-center gap-2 text-gray-600">
           <Link size={20} />
           <NextLink href={link} className="underline">
-            Ver Mais
+            {lang.staticContent.seeMore}
           </NextLink>
         </div>
       </div>

@@ -78,5 +78,4 @@ const icons = {
   Swap,
   Code,
 }
-
 export { teamMembers, sponsorsLogos, schoolsLogos, icons, socialMediaLinks }
