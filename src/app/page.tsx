@@ -5,7 +5,6 @@ import {
   Buildings,
   RocketLaunch,
   ArrowULeftDown,
-  CaretDoubleRight,
 } from 'phosphor-react'
 import Section from '@/components/layouts/Section'
 import TeamMember from '@/components/cards/TeamMember'
@@ -36,7 +35,7 @@ export default function Home() {
         <Section>
           <div className="flex flex-col md:flex-row justify-between md:items-center">
             <p className="flex items-center text-2xl font-bold">
-              Acompanhe na {' '}
+              {lang.staticContent.followOn} {' '}
               <span className="ml-2 text-primary items-center flex">
                 <ArrowULeftDown size={22} className="mr-1" />
                 MOZDEVZ

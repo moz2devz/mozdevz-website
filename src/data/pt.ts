@@ -237,6 +237,8 @@ const staticContent = {
   visitUs: 'Visite-nos',
   callUs: 'Ligue-nos',
   writeToUs: 'Escreva-nos',
+  seeMore: 'Ver mais',
+  followOn: 'Acompanhe-na ',
 }
 
 const menuItems = [

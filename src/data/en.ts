@@ -182,6 +182,8 @@ const staticContent = {
   visitUs: 'Visit us',
   callUs: 'Call us',
   writeToUs: 'Write to us',
+  seeMore: 'See more',
+  followOn: 'Follow on',
 }
 const menuItems = [
   { name: 'Home', href: '/' },
