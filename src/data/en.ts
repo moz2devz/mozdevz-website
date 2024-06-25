@@ -209,7 +209,7 @@ const events = [
     tags: [{ color: '#CCFBF1', title: 'Development' }],
     date: 'July 8, 2024',
     location: 'Online',
-    link: 'https://www.instagram.com/mozdevz/',
+    link: 'https://forms.gle/9UgGFMeMHyevQqhq7',
   },
   {
     image: 'cyberconnect-66781ddab3235.webp',
