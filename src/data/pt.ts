@@ -226,24 +226,56 @@ const staticContent = {
   manifesto5:
     'MozDevz é uma organização sem fins lucrativos com uma clara missão social - para ampliar e maximizar o impacto das TICs sobre a vida daqueles que mais precisam deles. Vemos os beneficiários de nosso trabalho como parceiros em um esforço conjunto para melhorar a qualidade de vida',
   joinUs: 'Junta-te a nós!',
-  contactTitle: "Sempre aqui para ter uma conversa",
+  contactTitle: 'Sempre aqui para ter uma conversa',
   contactSubtitle: 'Fale connosco',
-  contactInvitation: "Estamos sempre em busca de novos parceiros que possam se beneficiar de nossa expertise e colaborar connosco para desenvolver projectos incríveis juntos.",
-  placeholderName: "Nome",
-  placeholderTopic: "Assunto",
-  placeholderMessage: "Mensagem",
-  submit: "Submeter",
-  visitUs: "Visite-nos",
-  callUs: "Ligue-nos",
-  writeToUs: "Escreva-nos"
-
+  contactInvitation:
+    'Estamos sempre em busca de novos parceiros que possam se beneficiar de nossa expertise e colaborar connosco para desenvolver projectos incríveis juntos.',
+  placeholderName: 'Nome',
+  placeholderTopic: 'Assunto',
+  placeholderMessage: 'Mensagem',
+  submit: 'Submeter',
+  visitUs: 'Visite-nos',
+  callUs: 'Ligue-nos',
+  writeToUs: 'Escreva-nos',
+  seeMore: 'Ver mais',
+  followOn: 'Acompanhe-na ',
 }
+
 const menuItems = [
   { name: 'Home', href: '/' },
   { name: 'Sobre', href: '/about' },
   { name: 'Contacto', href: '/contact' },
 ]
 
+const events = [
+  {
+    image: 'event-data-wave-24-66782b3fb5090.webp',
+    title: 'Data Wave: Conferência de Dados e IA',
+    tags: [
+      { color: '#E9D5FF', title: 'Data' },
+      { color: '#CBD5E1', title: 'IA' },
+    ],
+    date: '14 de Setembro 2024',
+    location: 'Por Anunciar',
+    link: 'https://datawave.mozdevz.org/',
+  },
+  {
+    image: 'khodar-2-1-66782618374c4.webp',
+    title: 'Khodar (Season 2)',
+    tags: [{ color: '#CCFBF1', title: 'Development' }],
+    date: '08 de Julho 2024',
+    location: 'Online',
+    link: 'https://forms.gle/9UgGFMeMHyevQqhq7',
+  },
+  {
+    image: 'cyberconnect-66781ddab3235.webp',
+    title: 'MozCyber Connect',
+    tags: [{ color: '#FEF3C7', title: 'Cybersecurity' }],
+    date: '04 de Maio - 01 de Junho 2024',
+    location: 'Online',
+    link: 'https://www.youtube.com/watch?v=TgXbZ-DZCy8&list=PLgx8AvFCHjcswvCZyDV4HJ3ckerA1N18B',
+  },
+]
 export {
   recognitions,
   team,
@@ -252,4 +284,5 @@ export {
   schools,
   staticContent,
   menuItems,
+  events,
 }

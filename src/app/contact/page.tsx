@@ -84,7 +84,7 @@ export default function Contact() {
                   <h3 className="text-lg text-gray-800">
                     {staticContent.callUs}
                   </h3>
-                  <p className="text-gray-600 text-lg">+258 84 856 5131</p>
+                  <p className="text-gray-600 text-lg">+258 85 696 1877</p>
                 </div>
               </div>
               <div className="max-w-sm flex items-start gap-5">

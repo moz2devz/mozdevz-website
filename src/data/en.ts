@@ -182,11 +182,43 @@ const staticContent = {
   visitUs: 'Visit us',
   callUs: 'Call us',
   writeToUs: 'Write to us',
+  seeMore: 'See more',
+  followOn: 'Follow on',
 }
 const menuItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
+]
+
+const events = [
+  {
+    image: 'event-data-wave-24-66782b3fb5090.webp',
+    title: 'Data Wave: Data and AI Conference',
+    tags: [
+      { color: '#E9D5FF', title: 'Data' },
+      { color: '#CBD5E1', title: 'AI' },
+    ],
+    date: 'September 14, 2024',
+    location: 'To Be Announced',
+    link: 'https://datawave.mozdevz.org/',
+  },
+  {
+    image: 'khodar-2-1-66782618374c4.webp',
+    title: 'Khodar (Season 2)',
+    tags: [{ color: '#CCFBF1', title: 'Development' }],
+    date: 'July 8, 2024',
+    location: 'Online',
+    link: 'https://forms.gle/9UgGFMeMHyevQqhq7',
+  },
+  {
+    image: 'cyberconnect-66781ddab3235.webp',
+    title: 'MozCyber Connect',
+    tags: [{ color: '#FEF3C7', title: 'Cybersecurity' }],
+    date: 'May 4 - June 1, 2024',
+    location: 'Online',
+    link: 'https://www.youtube.com/watch?v=TgXbZ-DZCy8&list=PLgx8AvFCHjcswvCZyDV4HJ3ckerA1N18B',
+  },
 ]
 export {
   recognitions,
@@ -196,4 +228,5 @@ export {
   schools,
   staticContent,
   menuItems,
+  events
 }
