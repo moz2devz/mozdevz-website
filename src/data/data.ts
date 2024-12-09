@@ -1,10 +1,11 @@
 // Team members images
-import igorImg from '../../public/assets/team/igor.webp'
-import fenildeImg from '../../public/assets/team/fenilde.jpg'
-import odiliaImg from '../../public/assets/team/odilia.webp'
-import papsImg from '../../public/assets/team/paps.jpg'
-import carrimaImg from '../../public/assets/team/carrima.webp'
-import melanieImg from '../../public/assets/team/melanie.jpg'
+import valquiriapondjaImg from '../../public/assets/team/valquiriapondja.webp'
+import fenildechiluvaneImg from '../../public/assets/team/fenildechiluvane.webp'
+import melanienhanziloImg from '../../public/assets/team/melanienhanzilo.webp'
+import malagycassamoImg from '../../public/assets/team/malagycassamo.webp'
+import dariopaculeImg from '../../public/assets/team/dariopacule.webp'
+import waltercumbucaneImg from '../../public/assets/team/waltercumbucane.webp'
+import ediceliosavanguaneImg from '../../public/assets/team/ediceliosavanguane.webp'
 
 // Sponsors logo
 import espaco_uem from '../../public/assets/sponsors/espaco_uem.png'
@@ -32,12 +33,13 @@ import up_maputoLogo from '../../public/assets/schools/upmaputomode.png'
 import { User, Student, Swap, Code } from 'phosphor-react'
 
 const teamMembers = {
-  igor: igorImg,
-  fenilde: fenildeImg,
-  odilia: odiliaImg,
-  paps: papsImg,
-  carrima: carrimaImg,
-  melanie: melanieImg,
+  valquiriapondja: valquiriapondjaImg,
+  fenildechiluvane: fenildechiluvaneImg,
+  melanienhanzilo: melanienhanziloImg,
+  malagycassamo: malagycassamoImg,
+  dariopacule: dariopaculeImg,
+  waltercumbucane: waltercumbucaneImg,
+  ediceliosavanguane: ediceliosavanguaneImg,
 }
 
 const sponsorsLogos = {
