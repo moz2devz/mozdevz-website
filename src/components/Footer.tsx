@@ -8,7 +8,7 @@ import {
   IconContext,
 } from 'phosphor-react'
 
-import logo from '../../public/assets/WhiteLogoTrans.png'
+import logo from '../../public/assets/mozdevz-white.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import { socialMediaLinks } from '@/data/data'
